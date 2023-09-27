@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./Components/Header/Header";
+import Business from "./Components/Business/Business";
+import Entertainment from "./Components/Entertainment/Entertainment";
+import General from "./Components/General/General";
+import Health from "./Components/Health/Health";
+import Science from "./Components/Science/Science";
+import Sports from "./Components/Sports/Sports";
+import Technology from "./Components/Technology/Technology";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/Business" element={<Business />} />
+          <Route path="/Entertainment" element={<Entertainment />} />
+          <Route path="/General" element={<General />} />
+          <Route path="/Health" element={<Health />} />
+          <Route path="/Science" element={<Science />} />
+          <Route path="/Sports" element={<Sports />} />
+          <Route path="/technology" element={<Technology />} />
+        </Routes>
+        {/* <Footer /> */}
+      </Router>
+    </>
   );
 }
 
