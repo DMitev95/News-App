@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import Head from "./Head";
+import DehazeIcon from "@mui/icons-material/Dehaze";
+import CloseIcon from "@mui/icons-material/Close";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -41,11 +43,7 @@ const Header = () => {
               </li>
             </ul>
             <button className="barIcon" onClick={() => setNavbar(!navbar)}>
-              {navbar ? (
-                <i className="fa fa-times"></i>
-              ) : (
-                <i className="fa fa-bars"></i>
-              )}
+              {navbar ? <CloseIcon></CloseIcon> : <DehazeIcon></DehazeIcon>}
             </button>
           </nav>
         </div>

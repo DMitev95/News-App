@@ -1,13 +1,14 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Header from "./Components/Header/Header";
-import Business from "./Components/Business/Business";
-import Entertainment from "./Components/Entertainment/Entertainment";
-import General from "./Components/General/General";
-import Health from "./Components/Health/Health";
-import Science from "./Components/Science/Science";
-import Sports from "./Components/Sports/Sports";
-import Technology from "./Components/Technology/Technology";
+import Header from "./Components/Common/Header/Header";
+import Business from "./Components/Common/Business/Business";
+import Entertainment from "./Components/Common/Entertainment/Entertainment";
+import General from "./Components/Common/General/General";
+import Health from "./Components/Common/Health/Health";
+import Science from "./Components/Common/Science/Science";
+import Sports from "./Components/Common/Sports/Sports";
+import Technology from "./Components/Common/Technology/Technology";
+import Homepage from "./Components/Home/Homepage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Router>
         <Header />
         <Routes>
+          <Route path="/" element={<Homepage />} />
           <Route path="/Business" element={<Business />} />
           <Route path="/Entertainment" element={<Entertainment />} />
           <Route path="/General" element={<General />} />
