@@ -1,333 +1,342 @@
 export const test = {
   status: "ok",
-  totalResults: 35,
+  totalResults: 36,
   articles: [
     {
       source: {
-        id: null,
-        name: "Yahoo Entertainment",
+        id: "reuters",
+        name: "Reuters",
       },
-      author: "Yahoo Sports Staff",
+      author: "Brian Snyder",
       title:
-        "NFL Week 4 Thursday Night Football live tracker: Lions and Packers square off in early NFC North grudge match - Yahoo Sports",
+        "Elon Musk wades into US immigration debate at Texas-Mexico border - Reuters",
       description:
-        "Dan Campbell and the Lions can take control of the NFC North with a win.",
-      url: "https://sports.yahoo.com/nfl-week-4-thursday-night-football-live-tracker-lions-and-packers-square-off-in-early-nfc-north-grudge-match-225048032.html",
+        'Billionaire Elon Musk waded into the U.S. immigration debate on Thursday, paying a visit to the Texas border with Mexico to meet with local politicians and law enforcement and obtain what he called an "unfiltered" view of the situation.',
+      url: "https://www.reuters.com/world/us/elon-musk-wades-into-us-immigration-debate-texas-mexico-border-2023-09-29/",
       urlToImage:
-        "https://s.yimg.com/ny/api/res/1.2/VeCMs5BqRAHtLebOjyyWgA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDA-/https://s.yimg.com/os/creatr-uploaded-images/2023-09/f8b374d0-5d3e-11ee-a8db-97f3c8dcba94",
-      publishedAt: "2023-09-29T02:19:00Z",
+        "https://www.reuters.com/resizer/lLd9nuEh4z5TCl6x7g6-oGN_iuE=/1200x628/smart/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/FR3JO6SHCJJ3LFUOM3IIW4IS3M.jpg",
+      publishedAt: "2023-09-29T16:21:22Z",
       content:
-        "Lions coach Dan Campbell will need his team to be focused during a Week 4 tilt against the Packers. (Photo by Kevin Sabitus/Getty Images) (Kevin Sabitus via Getty Images)\r\nIt's early, but it certainl… [+1127 chars]",
+        "EAGLE PASS, Texas, Sept 28 (Reuters) - Billionaire Elon Musk waded into the U.S. immigration debate on Thursday, paying a visit to the Texas border with Mexico to meet with local politicians and law … [+3152 chars]",
     },
     {
       source: {
-        id: "cnn",
-        name: "CNN",
+        id: "cbs-news",
+        name: "CBS News",
       },
-      author: "James Frater",
+      author: null,
       title:
-        "Sycamore Gap: 16-year-old boy arrested after famous tree ‘deliberately felled’ - CNN",
+        "Pakistan suicide bombing near mosque in Balochistan kills more than 50 gathered for religious procession - CBS News",
       description:
-        "The Sycamore Gap tree, located in a natural dip in the landscape alongside Hadrian’s Wall in Northern England, is believed to have been chopped down in what authorities are calling an “act of vandalism.”",
-      url: "https://www.cnn.com/travel/sycamore-gap-tree-deliberately-felled-britain/index.html",
+        "Pakistan's Interior Minister condemned the \"heinous\" suicide bombing that killed dozens of people gathered at a mosque to mark the Prophet Mohammed's birthday.",
+      url: "https://www.cbsnews.com/news/pakistan-suicide-bombing-mosque-balochistan-religious-procession-death-toll/",
       urlToImage:
-        "https://media.cnn.com/api/v1/images/stellar/prod/230928090050-01-sycamore-gap-tree-felled.jpg?c=16x9&q=w_800,c_fill",
-      publishedAt: "2023-09-29T02:14:00Z",
+        "https://assets3.cbsnewsstatic.com/hub/i/r/2023/09/29/f37b9c9e-16d7-4005-96f0-c652585967e6/thumbnail/1200x630g2/7cfabeee886b8dee397d5c49f2ef6d1d/pakistan-mosque-attack-1697324093.jpg?v=242034d9ab4afded7ccae23353fd75fe",
+      publishedAt: "2023-09-29T15:50:00Z",
       content:
-        "A famous tree that has stood sentinel on Britains Roman-built Hadrians Wall for more than 200 years has been deliberately felled in what authorities have called an act of vandalism.\r\nThe sycamore tre… [+2216 chars]",
+        "Islamabad, Pakistan — A religious gathering to celebrate the birthday of Islam's Prophet Mohammad turned deadly Friday in Pakistan when a suicide bomber exploded a powerful device near a mosque, kill… [+4565 chars]",
     },
     {
       source: {
         id: "espn",
         name: "ESPN",
       },
-      author: null,
-      title:
-        "Orioles clinch AL East title with 100th win of season - ESPN - ESPN",
+      author: "Alaina Getzenberg",
+      title: "Bills' Poyer ruled out vs. high-scoring Dolphins - ESPN",
       description:
-        "Baltimore clinched its first AL East title since 2014 with a 2-0 win over the Boston Red Sox on Thursday night, the Orioles' 100th win of the season.",
-      url: "https://www.espn.com/mlb/story/_/id/38515760/orioles-clinch-al-east-title-100th-win-season",
+        "The Bills will be without safety Jordan Poyer for the big Week 4 AFC East clash against the Dolphins. He has been ruled out as he continues to deal with a knee injury that has kept him out of practice all week.",
+      url: "https://www.espn.com/nfl/story/_/id/38520275/bills-safety-jordan-poyer-ruled-vs-high-scoring-dolphins",
       urlToImage:
-        "https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0929%2Fr1231188_1296x729_16%2D9.jpg",
-      publishedAt: "2023-09-29T01:20:00Z",
+        "https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0315%2Fr1144913_1296x729_16%2D9.jpg",
+      publishedAt: "2023-09-29T15:48:00Z",
       content:
-        "Sep 28, 2023, 09:20 PM ET\r\nBALTIMORE -- Ramon Urias fielded a grounder and threw to first for the final out, and the Baltimore Orioles poured onto the field for a celebration at the mound.\r\nThey were… [+3424 chars]",
-    },
-    {
-      source: {
-        id: "cnn",
-        name: "CNN",
-      },
-      author: "Melanie Zanona, Clare Foran, Lauren Fox, Haley Talbot",
-      title:
-        "Tensions erupt between McCarthy and Gaetz at closed-door House GOP meeting as shutdown nears - CNN",
-      description:
-        "Divisions among House Republicans were on full display Thursday evening as the chamber convened for late night votes with a government shutdown imminent as there is no clear path in Congress to avert it.",
-      url: "https://www.cnn.com/2023/09/28/politics/shutdown-latest-government-funding/index.html",
-      urlToImage:
-        "https://media.cnn.com/api/v1/images/stellar/prod/230926170705-01-kevin-mccarthy-092623.jpg?c=16x9&q=w_800,c_fill",
-      publishedAt: "2023-09-29T01:11:00Z",
-      content:
-        "Divisions among House Republicans were on full display Thursday evening as the chamber convened for late night votes with a government shutdown imminent as there is no clear path in Congress to avert… [+9852 chars]",
+        "ORCHARD PARK, N.Y. -- The Buffalo Bills will be without a key member of their defensive backfield for the big Week 4 AFC East clash against the Miami Dolphins, ruling out safety Jordan Poyer as he co… [+2422 chars]",
     },
     {
       source: {
         id: "usa-today",
         name: "USA Today",
       },
-      author: "Bryan Alexander",
+      author: "Krystal Nurse",
       title:
-        "'Golden Bachelor' recap: Who got Gerry Turner's roses night one? - USA TODAY",
+        "Is NYC sinking? Yes, NASA scientists find most parts submerging - USA TODAY",
       description:
-        'What happened in the First Night of ABC\'s "Golden Bachelor." Gerry Turner, 72, met 22 candidates? But who touched his heart and received roses?',
-      url: "https://www.usatoday.com/story/entertainment/tv/2023/09/28/the-golden-bachelor-premiere-recap/70986727007/",
+        "NASA scientists find rising sea levels and a sinking city possibly bringing more flooding concerns to the major metropolitan area.",
+      url: "https://www.usatoday.com/story/news/nation/2023/09/29/nyc-sinking-nasa-study/71000769007/",
       urlToImage:
-        "https://www.usatoday.com/gcdn/authoring/authoring-images/2023/09/28/USAT/70988517007-170002-52831.jpg?crop=2999,1687,x0,y156&width=2999&height=1687&format=pjpg&auto=webp",
-      publishedAt: "2023-09-29T01:02:59Z",
+        "https://www.usatoday.com/gcdn/presto/2023/08/24/USAT/9a0b92b2-3143-41ed-b9a3-2cd7a9d28c97-AP22271564958426.jpg?crop=5833,3281,x0,y421&width=3200&height=1800&format=pjpg&auto=webp",
+      publishedAt: "2023-09-29T15:08:36Z",
       content:
-        'Yes, there was drama and conniving on the first night of "The Golden Bachelor."\r\nFor those who feared the behind-the-back intrigue, melodrama and just plain oddness of past seasons would be missing w… [+5718 chars]',
+        "Scientists found most of the New York City metropolitan area is slowly sinking, making the region riskier to flooding, according to a study published this week.\r\nA team of scientists from NASA's Jet … [+3520 chars]",
     },
     {
       source: {
-        id: null,
-        name: "BBC News",
+        id: "cnn",
+        name: "CNN",
       },
-      author: "https://www.facebook.com/bbcnews",
-      title: "Republicans make their case at Biden impeachment inquiry - BBC",
+      author: "Ben Morse",
+      title:
+        "Detroit Lions humble ‘embarrassing’ Green Bay Packers as David Montgomery scores three touchdowns - CNN",
       description:
-        "Witnesses, called by Republicans, cautioned that evidence is lacking for impeaching the president.",
-      url: "https://www.bbc.com/news/world-us-canada-66954626",
+        "The Detroit Lions laid down a marker for their season with a statement victory over the Green Bay Packers on Thursday evening.",
+      url: "https://www.cnn.com/2023/09/29/sport/detroit-lions-green-bay-packers-tnf-spt-intl/index.html",
       urlToImage:
-        "https://ichef.bbci.co.uk/news/1024/branded_news/9EC8/production/_131284604_gettyimages-1706083779.jpg",
-      publishedAt: "2023-09-29T00:55:16Z",
+        "https://media.cnn.com/api/v1/images/stellar/prod/230929050101-04-lions-packers-nfl-092823.jpg?c=16x9&q=w_800,c_fill",
+      publishedAt: "2023-09-29T15:08:00Z",
       content:
-        "House Republicans have branded the first day of their impeachment inquiry against Joe Biden a success, saying they justified their case. \r\nBut expert witnesses called by Republicans cautioned there w… [+4903 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "[Removed]",
-      },
-      author: null,
-      title: "[Removed]",
-      description: "[Removed]",
-      url: "https://removed.com",
-      urlToImage: null,
-      publishedAt: "1970-01-01T00:00:00Z",
-      content: "[Removed]",
-    },
-    {
-      source: {
-        id: null,
-        name: "BBC News",
-      },
-      author: "https://www.facebook.com/bbcnews",
-      title: "UK on track for record tax levels, IFS think tank says - BBC",
-      description:
-        "Study says taxes will reach 37% of national income by next election - the highest since 1948",
-      url: "https://www.bbc.com/news/uk-politics-66945729",
-      urlToImage:
-        "https://ichef.bbci.co.uk/news/1024/branded_news/298E/production/_131283601_gettyimages-1228292684.jpg",
-      publishedAt: "2023-09-29T00:14:36Z",
-      content:
-        "The government is on course to oversee the biggest tax-raising parliament since records began, according to the Institute for Fiscal Studies' analysis.\r\nThe IFS forecasts taxes will amount to about 3… [+3641 chars]",
+        "The Detroit Lions laid down a marker for their season with a statement victory over the Green Bay Packers on Thursday evening.\r\nLions running back David Montgomery ran for 121 yards and three touchdo… [+2702 chars]",
     },
     {
       source: {
         id: null,
         name: "CNBC",
       },
-      author: "Michael Wayland, John Rosevear",
+      author: "Christina Wilkie",
       title:
-        "Automakers grow frustrated over pace of UAW negotiations as new deadline looms - CNBC",
+        "Government shutdown fear grows as House prepares to vote on partisan spending plan - CNBC",
       description:
-        "Frustrations remain around key economic demands and what some see as a lack of urgency by the union to reach a deal, according to people familiar.",
-      url: "https://www.cnbc.com/2023/09/28/uaw-negotiations-automakers-grow-frustrated-as-new-deadline-looms.html",
+        "The federal government is due to shut down operations early Sunday if Congress does not approve a funding bill that President Joe Biden signs.",
+      url: "https://www.cnbc.com/2023/09/29/government-shutdown-fear-grows-as-mccarthy-lays-out-partisan-vote-plan.html",
       urlToImage:
-        "https://image.cnbcfm.com/api/v1/image/107306845-16957484112023-09-26t170415z_298265287_rc2hg3a9lwts_rtrmadp_0_autos-labor-uaw-biden.jpeg?v=1695946354&w=1920&h=1080",
-      publishedAt: "2023-09-29T00:12:00Z",
+        "https://image.cnbcfm.com/api/v1/image/107309138-16959979362023-09-29t143036z_227988442_rc2ei3ae0i7y_rtrmadp_0_usa-shutdown.jpeg?v=1695998789&w=1920&h=1080",
+      publishedAt: "2023-09-29T14:44:45Z",
       content:
-        "Striking members of the United Auto Workers (UAW) picket outside the GM's Willow Run Distribution Center, in Bellville, Wayne County, Michigan, U.S., September 26, 2023.\r\nDETROIT Tensions are rising … [+5609 chars]",
+        "WASHINGTON With fewer than two days left to fund the federal government and avoid a shutdown, House GOP leaders on Friday began debate ahead of a vote on a partisan, short-term spending bill that has… [+2224 chars]",
     },
     {
       source: {
         id: null,
-        name: "PEOPLE",
+        name: "CNBC",
       },
-      author: "https://www.facebook.com/peoplemag",
+      author: "Michael Wayland",
       title:
-        "People's Choice Country Awards 2023: See Arrivals Photos - PEOPLE",
+        "UAW announces new strikes at GM and Ford plants, spares Stellantis citing 'momentum' in talks - CNBC",
       description:
-        "From Kelsea Ballerini to Dan + Shay, country music's biggest stars are looking glamorous as walk the red carpet at the first-ever People's Choice Country Awards.",
-      url: "https://people.com/peoples-choice-country-awards-2023-arrivals-red-carpet-photos-7979143",
+        "About 6,900 autoworkers will take part in the latest wave of work stoppages, joining roughly 18,300 workers who are currently on strike for the union.",
+      url: "https://www.cnbc.com/2023/09/29/uaw-announces-new-strikes-at-gm-and-ford-plants-sparing-stellantis.html",
       urlToImage:
-        "https://people.com/thmb/ybekiO6wdky5ZTu1alq_w5j8_kY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(722x160:724x162)/2023-peoples-choice-country-awards-dan-and-shay-tout-092823-d0d29c072b8f4f828ec3eed4093d9ded.jpg",
-      publishedAt: "2023-09-29T00:02:59Z",
+        "https://image.cnbcfm.com/api/v1/image/107307279-1695815401889-gettyimages-1691136906-1353192-fi-uaw-walkout-inland-empire-13-gmf.jpeg?v=1695998445&w=1920&h=1080",
+      publishedAt: "2023-09-29T14:40:45Z",
       content:
-        "Country music's finest have stepped out for the first ever People's Choice Country Awards.\r\nThe debut event, which is hosted by Little Big Town, kicks off at 8:00 p.m. on Thursday, Sept. 28 in Nashvi… [+320 chars]",
+        "DETROIT The United Auto Workers union will expand strikes against General Motors and Ford Motor to two U.S. assembly plants at noon ET, UAW President Shawn Fain said Friday.\r\nThe additional strikes w… [+3717 chars]",
     },
     {
       source: {
-        id: "ign",
-        name: "IGN",
+        id: "usa-today",
+        name: "USA Today",
       },
-      author: "Alex Stedman",
-      title: "Chewy Founder Ryan Cohen Is Now Officially GameStop's CEO - IGN",
-      description:
-        "After firing former CEO Matthew Furlong and naming Chewy founder Ryan Cohen executive chairman back in June, GameStop has officially named Cohen their new president and CEO.",
-      url: "https://www.ign.com/articles/chewy-founder-ryan-cohen-is-now-officially-gamestops-ceo",
-      urlToImage:
-        "https://assets-prd.ignimgs.com/2023/09/28/gamestop-1686183054905-1695943969584.jpg?width=1280",
-      publishedAt: "2023-09-28T23:37:11Z",
-      content:
-        "After firing former CEO Matthew Furlong and naming Chewy founder Ryan Cohen executive chairman back in June\r\n, GameStop has officially named\r\n Cohen their new president and CEO.\r\nAnd, per an email ob… [+1682 chars]",
-    },
-    {
-      source: {
-        id: "politico",
-        name: "Politico",
-      },
-      author: null,
+      author: "USA TODAY",
       title:
-        "Second GOP debate ratings: Viewership drops by more than 25 percent - POLITICO",
-      description:
-        "Around 13 million people watched the first debate. About 9.5 million people tuned in for the second.",
-      url: "https://www.politico.com/news/2023/09/28/viewership-second-republican-presidential-primary-debate-00118960",
-      urlToImage:
-        "https://static.politico.com/e9/63/ffad99314871888de6c0bd14c11a/20230927-gop-debate-philip-cheung-0012.jpg",
-      publishedAt: "2023-09-28T23:28:48Z",
-      content:
-        "His campaign has already said he would not attend the next scheduled debate, which is slated for Miami at the beginning of November. Running his race like an incumbent, Trump has already set his eyes… [+1078 chars]",
-    },
-    {
-      source: {
-        id: "axios",
-        name: "Axios",
-      },
-      author: "Axios",
-      title:
-        "Trump halts plans to request Georgia case move to federal court - Axios",
+        "Photos: Iconic British Sycamore Gap tree felled, teen arrested - USA TODAY",
       description: null,
-      url: "https://www.axios.com/2023/09/28/trump-georgia-rico-federal-court",
+      url: "https://www.usatoday.com/story/news/world/2023/09/29/photos-sycamore-gap-tree-felling-robin-hood/71000849007/",
       urlToImage: null,
-      publishedAt: "2023-09-28T23:10:04Z",
+      publishedAt: "2023-09-29T14:38:29Z",
       content: null,
+    },
+    {
+      source: {
+        id: "nbc-news",
+        name: "NBC News",
+      },
+      author: "Kathryn Prociv, Edward Shaw",
+      title:
+        "New York City could see historic flooding as up to 6 inches of rain pelts the Northeast - NBC News",
+      description:
+        "Twenty-three million people were under flood watches across parts of New Jersey, New York and Connecticut on Friday morning with flash flood warnings in effect for parts of Long Island, Brooklyn, Queens, Manhattan and New Jersey.",
+      url: "https://www.nbcnews.com/news/weather/new-york-city-see-historic-flooding-6-inches-rain-pelts-northeast-rcna118033",
+      urlToImage:
+        "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2023-09/230929-flooding-northeast-mn-0945-8c6bf6.jpg",
+      publishedAt: "2023-09-29T14:29:40Z",
+      content:
+        "Twenty-three million people were under flood watches across parts of New Jersey, New York and Connecticut on Friday morning with flash flood warnings in effect for parts of Long Island, Brooklyn, Que… [+3523 chars]",
+    },
+    {
+      source: {
+        id: "nbc-news",
+        name: "NBC News",
+      },
+      author:
+        "Rebecca Shabad, Dareh Gregorian, Kelly O'Donnell, Frank Thorp V, Garrett Haake, Ryan Nobles, Scott Wong",
+      title:
+        "Sen. Dianne Feinstein, a trailblazer in U.S. politics and the longest-serving woman in the Senate, dies at 90 - NBC News",
+      description:
+        "Sen. Dianne Feinstein, D-Calif., a vocal advocate of gun-control measures who was known for trying to find common ground with Republicans during her three decades in the Senate, has died, her office announced Friday.",
+      url: "https://www.nbcnews.com/politics/congress/dianne-feinstein-rcna18010",
+      urlToImage:
+        "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2023-02/230214-ONE-TIME-USE-dianne-feinstein-jm-1419-34d325.jpg",
+      publishedAt: "2023-09-29T14:17:30Z",
+      content:
+        "WASHINGTON Sen. Dianne Feinstein, D-Calif., a vocal advocate of gun control measures who was known for trying to find common ground with Republicans during her three decades in the Senate, has died, … [+6713 chars]",
+    },
+    {
+      source: {
+        id: "engadget",
+        name: "Engadget",
+      },
+      author: "James Trew",
+      title:
+        "Analogue's limited edition Pockets are delightful and frustrating - Engadget",
+      description:
+        "Retro gaming is more than just classic titles from the past, it's also about collecting and finding rare items. Something Analogue is acutely aware of.",
+      url: "https://www.engadget.com/analogues-limited-edition-pockets-are-delightful-and-frustrating-140012471.html",
+      urlToImage:
+        "https://s.yimg.com/ny/api/res/1.2/mAPtSYYdZ2PMu8jbp23BBQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD04MDc-/https://s.yimg.com/os/creatr-uploaded-images/2023-09/06d49c00-5ec1-11ee-b7fb-4fd4239ebeee",
+      publishedAt: "2023-09-29T14:00:12Z",
+      content:
+        "The life of a retro gamer is one fraught with delight and frustration. Chasing the unique feeling of waiting years while someone develops a new game for your vintage console of choice in their spare … [+5998 chars]",
+    },
+    {
+      source: {
+        id: null,
+        name: "HarpersBAZAAR.com",
+      },
+      author: "Rosa Sanchez",
+      title:
+        "Versace Partners With the Albie Awards to Champion Justice - Harper's BAZAAR",
+      description:
+        "Notable guests Anne Hathaway, Alicia Keys, Cindy Crawford, and others looked glamorous in Donatella Versace’s new creations. Harper’s Bazaar has exclusive images.",
+      url: "https://www.harpersbazaar.com/fashion/designers/a45370373/versace-clooneys-albie-awards-celebrity-guests-design-sketches/",
+      urlToImage:
+        "https://hips.hearstapps.com/hmg-prod/images/gettyimages-1696799917-6516bf187ad4a.jpg?crop=0.862xw:0.651xh;0.0417xw,0.00964xh&resize=1200:*",
+      publishedAt: "2023-09-29T13:37:16Z",
+      content:
+        "The worlds of fashion, philanthropy, and Hollywood came together last night to toast to an equitable future.\r\nIn the midst of Fashion Month, Versace partnered with the Clooney Foundation for Justice … [+4449 chars]",
+    },
+    {
+      source: {
+        id: "bloomberg",
+        name: "Bloomberg",
+      },
+      author: "Jennifer Surane",
+      title:
+        "Citigroup (C) Stock Slump Prompts CEO Jane Fraser to Plot Downsizing - Bloomberg",
+      description:
+        "Inside Citigroup Inc., managers are scrambling to carry out the Wall Street giant’s biggest restructuring in two decades.",
+      url: "https://www.bloomberg.com/news/articles/2023-09-29/citigroup-c-stock-slump-prompts-ceo-jane-fraser-to-plot-downsizing",
+      urlToImage:
+        "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i01BmfEC9ICg/v1/1200x801.jpg",
+      publishedAt: "2023-09-29T13:35:33Z",
+      content:
+        "Inside Citigroup Inc., managers are scrambling to carry out the Wall Street giants biggest restructuring in two decades. \r\nThey have eight weeks left.",
+    },
+    {
+      source: {
+        id: null,
+        name: "Gizmodo.com",
+      },
+      author: "Kevin Hurler",
+      title: "Apple Reportedly Considered Buying Bing From Microsoft - Gizmodo",
+      description:
+        "Exploratory talks between big-wigs at Apple and Microsoft in 2020 reportedly included discussions of Apple taking on the beleaguered search engine.",
+      url: "https://gizmodo.com/apple-discussed-buying-bing-from-microsoft-default-1850885957",
+      urlToImage:
+        "https://i.kinja-img.com/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/e761c62f190dbe1ddbee2efe87602c69.jpg",
+      publishedAt: "2023-09-29T13:35:00Z",
+      content:
+        "As Google faces a massive antitrust lawsuit, revelations surrounding the case have presented us with a glimpse into an alternate reality. Microsoft reportedly discussed selling Bing to Apple just a f… [+2148 chars]",
+    },
+    {
+      source: {
+        id: "associated-press",
+        name: "Associated Press",
+      },
+      author: "KEVIN FREKING, STEPHEN GROVES",
+      title:
+        "McCarthy rejects Senate spending bill while scrambling for a House plan that averts a shutdown - The Associated Press",
+      description:
+        "House Speaker Kevin McCarthy is digging in on his refusal to take up Senate legislation designed to keep the federal government fully running beyond midnight Saturday. He's also acknowledging that stark divisions within his own conference hamper that chamber’…",
+      url: "https://apnews.com/article/government-shutdown-congress-mccarthy-biden-54e186535af403826e2010fae23446fe",
+      urlToImage:
+        "https://dims.apnews.com/dims4/default/2fec48e/2147483647/strip/true/crop/6000x3375+0+312/resize/1440x810!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F6e%2F26%2Fa50f2eed8df94a885890175cb1fe%2Fd6abef658c12401b9f2cdf0a3bffdf0c",
+      publishedAt: "2023-09-29T13:32:00Z",
+      content:
+        "WASHINGTON (AP) A government shutdown appeared all but inevitable as House Speaker Kevin McCarthy dug in Thursday, vowing he will not take up Senate legislation designed to keep the federal governmen… [+7432 chars]",
+    },
+    {
+      source: {
+        id: null,
+        name: "CBS Sports",
+      },
+      author: "Kyle Porter",
+      title:
+        "2023 Ryder Cup results, scores: Live coverage, standings, scoring, teams, pairings, schedule for Day 1 - CBS Sports",
+      description:
+        "Live scores, updates and analysis as play continues Friday at the 2023 Ryder Cup in Rome",
+      url: "https://www.cbssports.com/golf/news/2023-ryder-cup-results-scores-live-coverage-standings-scoring-teams-pairings-schedule-for-day-1/live/",
+      urlToImage:
+        "https://sportshub.cbsistatic.com/i/r/2023/09/29/2bb3864e-a626-48ad-a9ad-e109d07fa6fe/thumbnail/1200x675/31a3d8bcae9654269ec45ab872d206f2/untitled-design-22-1.png",
+      publishedAt: "2023-09-29T13:31:15Z",
+      content:
+        "The first session of the 2023 was a nightmare for the United States. It lost all four matches and trails Europe 4-0 going into Friday afternoon. It will now have to win 14 points in the next 24 match… [+2882 chars]",
+    },
+    {
+      source: {
+        id: "nbc-news",
+        name: "NBC News",
+      },
+      author: "Patrick Smith",
+      title:
+        "The world's oldest shoes? Sandals found in bat cave are thousands of years old, study finds - NBC News",
+      description:
+        "Sandals buried in a bat cave in southern Spain may be the oldest footwear ever discovered in Europe, scientists said.",
+      url: "https://www.nbcnews.com/news/world/worlds-oldest-shoes-sandals-found-bat-cave-spain-granada-rcna118012",
+      urlToImage:
+        "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2023-09/230929-spain-sandals-mb-1033-d3b6ba.jpg",
+      publishedAt: "2023-09-29T13:22:37Z",
+      content:
+        "Sandals buried in a bat cave in southern Spain may be the oldest footwear ever discovered in Europe, scientists said this week, estimating that they could be up to 6,200 years old. \r\nBaskets, tools a… [+4434 chars]",
     },
     {
       source: {
         id: "cnn",
         name: "CNN",
       },
-      author: "Dan Heching",
+      author: "Ashley Strickland",
       title:
-        "Daniel Radcliffe and other ‘Harry Potter’ stars remember the ‘magnificent’ Michael Gambon - CNN",
+        "September’s full harvest moon is the last supermoon of the year - CNN",
       description:
-        "Daniel Radcliffe, the lead star of the original “Harry Potter” film franchise, is remembering his late costar Michael Gambon after Gambon died of pneumonia this week at age 82.",
-      url: "https://www.cnn.com/2023/09/28/entertainment/daniel-radcliffe-michael-gambon-tribute/index.html",
+        "The full moon on September 29, called the harvest moon, is also the fourth and final supermoon of 2023.",
+      url: "https://www.cnn.com/2023/09/28/world/harvest-supermoon-full-moon-september-scn/index.html",
       urlToImage:
-        "https://media.cnn.com/api/v1/images/stellar/prod/230928151557-michael-gambon-harry-potter-half-blood-prince-restricted.jpg?c=16x9&q=w_800,c_fill",
-      publishedAt: "2023-09-28T22:57:00Z",
+        "https://media.cnn.com/api/v1/images/stellar/prod/230929074919-03-harvest-supermoon-092923.jpg?c=16x9&q=w_800,c_fill",
+      publishedAt: "2023-09-29T13:06:00Z",
       content:
-        "Daniel Radcliffe, the lead star of the original Harry Potter film franchise, is remembering his late costar Michael Gambon after Gambon died of pneumonia this week at age 82.\r\nMichael Gambon was one … [+2072 chars]",
+        "Sign up for CNNs Wonder Theory science newsletter. Explore the universe with news on fascinating discoveries, scientific advancements and more.\r\nThe full harvest moon shined in the early morning hour… [+3644 chars]",
+    },
+    {
+      source: {
+        id: "the-washington-post",
+        name: "The Washington Post",
+      },
+      author: "Dan Rosenzweig-Ziff",
+      title:
+        "Gen. Mark Milley to step aside as new Joint Chiefs chair takes command - The Washington Post",
+      description:
+        "Gen. Mark Milley, who is retiring after more than 40 years in the military, will be succeeded as Joint Chiefs chairman by Gen. Charles Q. Brown Jr.",
+      url: "https://www.washingtonpost.com/national-security/2023/09/29/mark-milley-charles-q-brown/",
+      urlToImage:
+        "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/QXKH6BBEMEI6XBTSYKA4PIWJNY_size-normalized.jpg&w=1440",
+      publishedAt: "2023-09-29T13:00:00Z",
+      content:
+        "Comment on this story\r\nComment\r\nGen. Mark Milley, the Joint Chiefs chairman who clashed with President Donald Trump but found new footing under President Biden, will step aside Friday as his successo… [+2948 chars]",
     },
     {
       source: {
         id: null,
-        name: "YouTube",
+        name: "Pitchfork",
       },
-      author: null,
+      author: "Jazz Monroe",
       title:
-        "Sen. Menendez faces fellow senators in Washington, D.C. - Eyewitness News ABC7NY",
+        "*NSync Return With “Better Place,” First New Song in Over 20 Years: Listen - Pitchfork",
       description:
-        "After recently pleading not guilting to federal bribery charges, New Jersey Senator Bob Menendez faced fellow senators in Washington D.C. Anthony Johnson has...",
-      url: "https://www.youtube.com/watch?v=VxWwjQMo5ao",
-      urlToImage: "https://i.ytimg.com/vi/VxWwjQMo5ao/maxresdefault.jpg",
-      publishedAt: "2023-09-28T22:29:15Z",
-      content: null,
-    },
-    {
-      source: {
-        id: null,
-        name: "KOAT New Mexico",
-      },
-      author: "Stephanie Muñiz",
-      title:
-        "1 injured in shooting at protest regarding Onate statue in Rio Arriba County - KOAT New Mexico",
-      description:
-        "One person was shot during an event regarding the Onate statue in Espanola.",
-      url: "https://www.koat.com/article/onate-statue-rio-arriba-county-espanola-shooting/45362174",
+        "Justin Timberlake reunited with his bandmates for the movie Trolls Band Together",
+      url: "https://pitchfork.com/news/nsync-return-with-better-place-first-new-song-in-over-20-years-listen/",
       urlToImage:
-        "https://kubrick.htvapps.com/htv-prod-media.s3.amazonaws.com/images/breaking-news-64908200a9fe1.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*",
-      publishedAt: "2023-09-28T22:26:00Z",
+        "https://media.pitchfork.com/photos/6516c53d5569c29d278773b8/16:9/w_1280,c_limit/NSync.jpg",
+      publishedAt: "2023-09-29T12:40:13Z",
       content:
-        "ESPAÑOLA, N.M. —New Mexico State Police say one person was shot during a protest regarding the of placing a statue of Don Juan de Oñate at the Rio Arriba County Clerk's office in Española. \r\nState po… [+2321 chars]",
-    },
-    {
-      source: {
-        id: "cnn",
-        name: "CNN",
-      },
-      author: "Jack Bantock",
-      title:
-        "Ryder Cup 2023: How to watch Team USA’s attempt to finally end 30 years of hurt in Europe - CNN",
-      description:
-        "Scottie Scheffler was not even born the last time the United States won a Ryder Cup on European soil.",
-      url: "https://www.cnn.com/2023/09/28/sport/ryder-cup-2023-watch-time-preview-spt-intl/index.html",
-      urlToImage:
-        "https://media.cnn.com/api/v1/images/stellar/prod/230928111143-05-ryder-cup-2023-watch-time-preview-spt-intl.jpg?c=16x9&q=w_800,c_fill",
-      publishedAt: "2023-09-28T21:12:00Z",
-      content:
-        "Scottie Scheffler was not even born the last time the United States won a Ryder Cup on European soil.\r\nAt the 44th edition of golfs biennial team tournament in Rome on Friday, the world No. 1 spearhe… [+3160 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "MacRumors",
-      },
-      author: "Juli Clover",
-      title: "Some USB-C Power Banks Fail to Work With iPhone 15 - MacRumors",
-      description:
-        "Apple added a USB-C port to the iPhone 15 lineup this year, allowing it to work with USB-C cables, USB-C power banks, and more. It turns out that...",
-      url: "https://www.macrumors.com/2023/09/28/iphone-15-usb-c-power-banks/",
-      urlToImage:
-        "https://images.macrumors.com/t/rPZV6v_4IeHkcBsreJmCOcw8lf0=/1600x/article-new/2023/09/iPhone-15-USB-C-Port-Keynote.jpeg",
-      publishedAt: "2023-09-28T21:06:18Z",
-      content:
-        "Apple added a USB-C port to the iPhone 15 lineup this year, allowing it to work with USB-C cables, USB-C power banks, and more. It turns out that some USB-C battery packs are not working properly wit… [+1486 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Variety",
-      },
-      author: "Joe Otterson",
-      title:
-        "Did You Write That Spec Script? Writers Detail How They Stayed Creative During WGA Strike - Variety",
-      description:
-        "As Hollywood's writers return to work, some TV pilot and movie spec scripts written during the strike could now make their way to market.",
-      url: "https://variety.com/2023/tv/news/writers-strike-tv-pilot-movie-spec-scripts-1235738842/",
-      urlToImage:
-        "https://variety.com/wp-content/uploads/2023/08/GettyImages-1590585183.jpg?w=1000&h=563&crop=1",
-      publishedAt: "2023-09-28T20:36:00Z",
-      content:
-        "As writers hit the picket lines during the 146-day WGA strike, they were absolutely barred from writing anything for the Hollywood studios and streamers. But there was no reason they couldn’t write t… [+4046 chars]",
-    },
-    {
-      source: {
-        id: null,
-        name: "Sports Illustrated",
-      },
-      author: "Madison Williams",
-      title:
-        "Giannis Antetokounmpo Wasn’t Consulted on Damian Lillard Trade, per Report - Sports Illustrated",
-      description:
-        "Milwaukee Bucks general manager Jon Horst reportedly didn’t want to burden the superstar power forward with the idea.",
-      url: "https://www.si.com/nba/2023/09/28/giannis-antetokounmpo-damian-lillard-jrue-holiday-trade-wasnt-consulted",
-      urlToImage:
-        "https://www.si.com/.image/ar_1.91%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_1200/MjAxMTI0Mjk1MjgyMjcxNzY2/giannis-antetokounmpo.jpg",
-      publishedAt: "2023-09-28T20:18:10Z",
-      content:
-        "Damian Lillard was the centerpiece of a three-team blockbuster trade between the Bucks, Trail Blazers and Suns on Wednesday. But although Lillard’s move to Milwaukee received most of the attention, h… [+1237 chars]",
+        "*NSync are back: Their first song in more than 20 years is out now. Listen to Better Place, co-produced by Justin Timberlake and Shellback, below. It appears in the animated movie Trolls Band Togethe… [+1585 chars]",
     },
   ],
 };

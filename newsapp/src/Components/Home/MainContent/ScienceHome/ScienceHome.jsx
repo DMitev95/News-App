@@ -25,18 +25,16 @@ const ScienceHome = (props) => {
   };
 
   return (
-    <>
-      <section className="business">
-        <Heading title="Science" />
-        <div className="content">
-          <Slider {...settings}>
-            {props.scienceNews.map((item) => {
-              return <ScienceHomeChildren key={item.source.id} info={item} />;
-            })}
-          </Slider>
-        </div>
-      </section>
-    </>
+    <section className="business">
+      <Heading title="Science" />
+      <div className="content">
+        <Slider {...settings}>
+          {props.scienceNews.map((item) => {
+            return <ScienceHomeChildren key={item.source.id} info={item} />;
+          })}
+        </Slider>
+      </div>
+    </section>
   );
 };
 

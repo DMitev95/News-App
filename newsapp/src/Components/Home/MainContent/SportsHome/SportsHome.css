@@ -1,0 +1,25 @@
+.sport .box {
+  margin-bottom: 30px;
+  margin-left: 2px;
+}
+.sport .text {
+  padding: 0 30px;
+}
+.sport .images {
+  width: 320px;
+  height: 220px;
+}
+.sport img {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+}
+.sport h1 {
+  font-size: 22px;
+}
+@media screen and (max-width: 768px) {
+  .music img,
+  .music .images {
+    height: 350px;
+  }
+}
