@@ -1,9 +1,7 @@
 import React from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import CommentIcon from "@mui/icons-material/Comment";
-import "./GeneralHome.css";
 
-const GeneralHomeChildren = ({
+const BusinessHomeChildren = ({
   info: { id, author, title, description, url, urlToImage, publishedAt },
 }) => {
   return (
@@ -15,7 +13,7 @@ const GeneralHomeChildren = ({
               <img src={urlToImage}></img>
             </div>
             <div className="category category1">
-              <span>General</span>
+              <span>Business</span>
             </div>
           </div>
           <div className="text">
@@ -26,12 +24,6 @@ const GeneralHomeChildren = ({
               </i>
               <label> {publishedAt}</label>
             </div>
-            <div className="comment">
-              <i>
-                <CommentIcon />
-              </i>
-              <label> 0</label>
-            </div>
           </div>
         </div>
       </div>
@@ -39,4 +31,4 @@ const GeneralHomeChildren = ({
   );
 };
 
-export default GeneralHomeChildren;
+export default BusinessHomeChildren;
