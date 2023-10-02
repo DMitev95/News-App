@@ -19,7 +19,7 @@ namespace NewsAppAPI.Services
             newsUrlKey = config.GetValue<string>("NewsSettings:NewsKey");
         }
 
-        public async Task<APIRequest> RequestByCategoryAsync(string category)
+        public async Task<APIRequest> RequestByCategoryAsync(string category, int pageSize = 40)
         {
             try
             {
@@ -33,7 +33,7 @@ namespace NewsAppAPI.Services
                 {
                     Country = Countries.US,
                     Category = (Categories)Enum.Parse(typeof(Categories), category, true),
-                    PageSize = 40
+                    PageSize = pageSize
                 });
 
                 if (articlesResponse.Status == Statuses.Ok)
@@ -73,11 +73,11 @@ namespace NewsAppAPI.Services
             }
         }
 
-        public async Task<APIRequest> RequestForHomeAsync()
+        public async Task<APIRequest> RequestForHomeAsync(int pageSize = 10)
         {
-            string[] categories = { "business", "sports", "science" };
+            string[] categoriesForHomePage = { "business", "sports", "science" };
 
-            foreach (var name in categories)
+            foreach (var name in categoriesForHomePage)
             {
                 try
                 {
@@ -91,7 +91,7 @@ namespace NewsAppAPI.Services
                     {
                         Country = Countries.US,
                         Category = (Categories)Enum.Parse(typeof(Categories), name, true),
-                        PageSize = 10
+                        PageSize = pageSize
                     });
 
                     if (articlesResponse.Status == Statuses.Ok)
