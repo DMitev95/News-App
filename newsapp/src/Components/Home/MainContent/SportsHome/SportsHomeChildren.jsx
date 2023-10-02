@@ -2,7 +2,16 @@ import React from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
 export const SportsHomeChildren = ({
-  info: { id, author, title, description, url, urlToImage, publishedAt },
+  info: {
+    id,
+    author,
+    category,
+    title,
+    description,
+    url,
+    urlToImage,
+    publishedAt,
+  },
 }) => {
   return (
     <div className="items">
@@ -12,7 +21,7 @@ export const SportsHomeChildren = ({
             <img src={urlToImage} alt="" />
           </div>
           <div className="category category1">
-            <span>Sport</span>
+            <span>{category}</span>
           </div>
         </div>
         <div className="text">

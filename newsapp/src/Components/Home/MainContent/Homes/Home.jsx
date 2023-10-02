@@ -6,15 +6,14 @@ import BusinessHome from "../BusinessHome/BusinessHome";
 import ScienceHome from "../ScienceHome/ScienceHome";
 import SportsHome from "../SportsHome/SportsHome";
 
-const Home = () => {
-  const data = Search();
+const Home = (props) => {
   return (
     <div className="container">
       <section className="mainContent">
-        <GeneralHome generalNews={data} />
-        <BusinessHome businessNews={data} />
-        <ScienceHome scienceNews={data} />
-        <SportsHome sportsNews={data} />
+        <GeneralHome generalNews={props.generalNews} />
+        <BusinessHome businessNews={props.businessNews} />
+        <ScienceHome scienceNews={props.scienceNews} />
+        <SportsHome sportsNews={props.sportsNews} />
       </section>
       <section className="sideContent"></section>
     </div>

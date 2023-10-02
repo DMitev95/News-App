@@ -18,6 +18,9 @@ const GeneralHome = (props) => {
     rows: 4,
     slidesPerRow: 1,
     dots: false,
+    autoplay: true,
+    autoplaySpeed: 7000,
+    pauseOnHover: true,
     responsive: [
       {
         breakpoint: 800,
@@ -35,7 +38,7 @@ const GeneralHome = (props) => {
         <div className="content">
           <Slider {...settings}>
             {props.generalNews.map((item) => {
-              return <GeneralHomeChildren key={item.source.id} info={item} />;
+              return <GeneralHomeChildren key={item.id} info={item} />;
             })}
           </Slider>
         </div>

@@ -30,7 +30,7 @@ const ScienceHome = (props) => {
       <div className="content">
         <Slider {...settings}>
           {props.scienceNews.map((item) => {
-            return <ScienceHomeChildren key={item.source.id} info={item} />;
+            return <ScienceHomeChildren key={item.id} info={item} />;
           })}
         </Slider>
       </div>

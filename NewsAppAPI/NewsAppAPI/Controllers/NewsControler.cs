@@ -62,6 +62,7 @@ namespace NewsAppAPI.Controllers
                             Url = article.Url,
                             UrlToImage = article.UrlToImage,
                             Content = article.Content,
+                            PublishedAt = article.PublishedAt,
                         });
                         index++;
                     }

@@ -1,17 +1,16 @@
 import { test } from "../../../DummyData";
 import React, { useEffect, useState } from "react";
+import { apiURL } from "../API/API";
 
-const Search = () => {
-  const [news, setNews] = useState([]);
-  useEffect(() => {
-    const fetchData = () => {
-      const data = test;
-      setNews(data.articles);
-    };
-    fetchData();
-  }, []);
+const Search = async (category) => {
+  const data = await fetch(
+    `https://localhost:7148/api/News/category?category=${category}`
+  )
+    .then((respose) => respose.json())
+    .then((data) => data)
+    .catch((err) => console.error(err));
 
-  return news;
+  return data.result;
 };
 
 export default Search;

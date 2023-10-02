@@ -3,13 +3,13 @@ import Card from "./Card";
 import "./Hero.css";
 
 const Hero = (props) => {
-  const firstForNews = props.news.slice(0, 4);
+  const firstFourNews = props.news.slice(0, 4);
   return (
     <div>
       <section className="hero">
         <div className="container">
-          {firstForNews.map((item) => {
-            return <Card key={item.source.id} item={item} />;
+          {firstFourNews.map((item) => {
+            return <Card key={item.id} item={item} />;
           })}
         </div>
       </section>

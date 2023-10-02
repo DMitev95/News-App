@@ -10,5 +10,6 @@
         public string Url { get; set; }
         public string UrlToImage { get; set; }
         public string Content { get; set; }
+        public string PublishedAt { get; set; }
     }
 }

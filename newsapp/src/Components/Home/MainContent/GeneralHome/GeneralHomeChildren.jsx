@@ -4,7 +4,16 @@ import CommentIcon from "@mui/icons-material/Comment";
 import "./GeneralHome.css";
 
 const GeneralHomeChildren = ({
-  info: { id, author, title, description, url, urlToImage, publishedAt },
+  info: {
+    id,
+    author,
+    category,
+    title,
+    description,
+    url,
+    urlToImage,
+    publishedAt,
+  },
 }) => {
   return (
     <>
@@ -15,7 +24,7 @@ const GeneralHomeChildren = ({
               <img src={urlToImage}></img>
             </div>
             <div className="category category1">
-              <span>General</span>
+              <span>{category}</span>
             </div>
           </div>
           <div className="text">

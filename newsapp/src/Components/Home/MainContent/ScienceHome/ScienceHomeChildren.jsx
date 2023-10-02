@@ -2,7 +2,16 @@ import React from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
 const ScienceHomeChildren = ({
-  info: { id, author, title, description, url, urlToImage, publishedAt },
+  info: {
+    id,
+    author,
+    category,
+    title,
+    description,
+    url,
+    urlToImage,
+    publishedAt,
+  },
 }) => {
   return (
     <div className="items">
@@ -12,7 +21,7 @@ const ScienceHomeChildren = ({
             <img src={urlToImage}></img>
           </div>
           <div className="category category1">
-            <span>Science</span>
+            <span>{category}</span>
           </div>
         </div>
         <div className="text">

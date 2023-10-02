@@ -23,7 +23,7 @@ const SportsHome = (props) => {
       <div className="content">
         <Slider {...settings}>
           {props.sportsNews.map((item) => {
-            return <SportsHomeChildren key={item.source.id} info={item} />;
+            return <SportsHomeChildren key={item.id} info={item} />;
           })}
         </Slider>
       </div>

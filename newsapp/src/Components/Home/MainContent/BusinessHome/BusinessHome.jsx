@@ -22,7 +22,7 @@ const BusinessHome = (props) => {
         <div className="content">
           <Slider {...settings}>
             {props.businessNews.map((item) => {
-              return <BusinessHomeChildren key={item.source.id} info={item} />;
+              return <BusinessHomeChildren key={item.id} info={item} />;
             })}
           </Slider>
         </div>
