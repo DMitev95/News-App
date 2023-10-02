@@ -1,3 +1,6 @@
+using NewsAppAPI.Services;
+using NewsAppAPI.Services.Contract;
+
 namespace NewsAppAPI
 {
     public class Program
@@ -7,7 +10,7 @@ namespace NewsAppAPI
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
+            builder.Services.AddScoped<INewsAPIConnection, NewsAPIConnection>();
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
