@@ -51,7 +51,7 @@ namespace NewsAppAPI.Services
                             Url = news.Url,
                             UrlToImage = news.UrlToImage,
                             Content = news.Content,
-
+                            PublishedAt = news.PublishedAt.ToString()
                         });
                     }
                     return responseModel;
