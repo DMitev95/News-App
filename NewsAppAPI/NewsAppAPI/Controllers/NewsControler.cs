@@ -41,28 +41,36 @@ namespace NewsAppAPI.Controllers
             try
             {
                 List<News> news = new List<News>();
-                var index = 1;
-
-                foreach (var article in (IEnumerable<NewsDTO>)newsReques.Result)
-                {
-                    news.Add(new News
-                    {
-                        Id = index,
-                        Category = article.Category,
-                        Author = article.Author,
-                        Title = article.Title,
-                        Description = article.Description,
-                        Url = article.Url,
-                        UrlToImage = article.UrlToImage,
-                        Content = article.Content,
-                    });
-                    index++;
-                }
+                
 
                 if (newsReques.StatusCode == HttpStatusCode.OK)
                 {
                     newsRespond.StatusCode = HttpStatusCode.OK;
                     newsRespond.Result = news;
+
+                    var index = 1;
+
+                    foreach (var article in (IEnumerable<NewsDTO>)newsReques.Result)
+                    {
+                        news.Add(new News
+                        {
+                            Id = index,
+                            Category = article.Category,
+                            Author = article.Author,
+                            Title = article.Title,
+                            Description = article.Description,
+                            Url = article.Url,
+                            UrlToImage = article.UrlToImage,
+                            Content = article.Content,
+                        });
+                        index++;
+                    }
+                }
+                else
+                {
+                    newsRespond.StatusCode = HttpStatusCode.BadRequest;
+                    newsRespond.ErrorMessages = newsReques.ErrorMessages;
+                    newsRespond.IsSuccess = false;
                 }
 
                 return newsRespond;
