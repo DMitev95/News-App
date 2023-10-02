@@ -33,6 +33,7 @@ namespace NewsAppAPI.Services
                 {
                     Country = Countries.US,
                     Category = (Categories)Enum.Parse(typeof(Categories), category, true),
+                    PageSize = 40
                 });
 
                 if (articlesResponse.Status == Statuses.Ok)
@@ -69,15 +70,13 @@ namespace NewsAppAPI.Services
                 };
                 return dto;
             }
-
-
-
-
         }
 
         public async Task<APIRequest> RequestForHomeAsync()
         {
-            foreach (var name in Enum.GetNames<Categories>())
+            string[] categories = { "business", "sports", "science" };
+
+            foreach (var name in categories)
             {
                 try
                 {
@@ -86,12 +85,12 @@ namespace NewsAppAPI.Services
                         throw new InvalidEnumArgumentException("The category is not correct!");
                     }
 
-                    //var test = (Categories)Enum.Parse(typeof(Categories), category);
                     var newsApiClient = new NewsApiClient(newsUrlKey);
                     var articlesResponse = await newsApiClient.GetTopHeadlinesAsync(new TopHeadlinesRequest
                     {
                         Country = Countries.US,
                         Category = (Categories)Enum.Parse(typeof(Categories), name, true),
+                        PageSize = 10
                     });
 
                     if (articlesResponse.Status == Statuses.Ok)
