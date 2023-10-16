@@ -18,8 +18,8 @@
   font-size: 22px;
 }
 @media screen and (max-width: 768px) {
-  .music img,
-  .music .images {
+  .sport img,
+  .sport .images {
     height: 350px;
   }
 }

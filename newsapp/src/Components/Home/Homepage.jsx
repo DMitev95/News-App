@@ -46,7 +46,7 @@ const Homepage = () => {
 
   return (
     <>
-      {/* <Hero news={news} /> */}
+      <Hero news={businessNews.slice(0, 4)} />
       <Home
         generalNews={news}
         scienceNews={scienceNews}
