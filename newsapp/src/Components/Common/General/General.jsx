@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Search from "../Search/Search";
+import { GeneralChildren } from "./GeneralChildren";
 
 const General = () => {
+  // const category = "general";
+  // const [news, setNews] = useState([]);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const data = await Search(category);
+  //     setNews(data);
+  //   };
+  //   fetchData();
+  // }, [category]);
+
   return (
     <>
-      <section className="culture">
+      <section className="general">
         <div className="container paddingTB">
-          <h1>General Sections</h1>
+          {/* {news.map((item) => {
+            return <GeneralChildren key={item.id} info={item} />;
+          })} */}
+          <h1>General section!</h1>
         </div>
       </section>
     </>
