@@ -13,40 +13,33 @@ const Homepage = () => {
     };
     fetchData();
   }, [category]);
+  console.log(news);
 
-  const scienceNews = news.filter((item) => {
-    if (item.category === "science") {
-      return true;
-    } else {
-      return false;
-    }
-  });
-  const sportsNews = news.filter((item) => {
-    if (item.category === "sports") {
-      return true;
-    } else {
-      return false;
-    }
-  });
-  const businessNews = news.filter((item) => {
-    if (item.category === "business") {
-      return true;
-    } else {
-      return false;
-    }
-  });
+  const scienceNews = news.filter((item) => item.category === "science");
+  const sportsNews = news.filter((item) => item.category === "sports");
+  const businessNews = news.filter((item) => item.category === "business");
 
-  const herowNews = [
-    scienceNews.slice(0, 1)[0],
-    scienceNews.slice(0, 1)[0],
-    sportsNews.slice(0, 1)[0],
-    businessNews.slice(0, 1)[0],
-  ];
-  console.log(herowNews);
+  const herowNews = [];
+
+  if (scienceNews.length > 0) {
+    herowNews.push(scienceNews[0]);
+  }
+
+  if (scienceNews.length > 1) {
+    herowNews.push(scienceNews[1]);
+  }
+
+  if (sportsNews.length > 0) {
+    herowNews.push(sportsNews[0]);
+  }
+
+  if (businessNews.length > 0) {
+    herowNews.push(businessNews[0]);
+  }
 
   return (
     <>
-      <Hero news={businessNews.slice(0, 4)} />
+      <Hero news={herowNews} />
       <Home
         generalNews={news}
         scienceNews={scienceNews}
