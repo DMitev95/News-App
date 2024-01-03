@@ -17,7 +17,7 @@ const BusinessHome = (props) => {
 
   return (
     <>
-      <section className="business">
+      <section className="business-home">
         <Heading title="Business" />
         <div className="content">
           <Slider {...settings}>

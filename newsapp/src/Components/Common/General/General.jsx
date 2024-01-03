@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Search from "../Search/Search";
-import { GeneralChildren } from "./GeneralChildren";
 
 const General = () => {
   // const category = "general";

@@ -4,7 +4,7 @@ import ScienceHomeChildren from "./ScienceHomeChildren";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../BusinessHome/BusinessHome.css";
+import "./ScienceHome.css";
 
 const ScienceHome = (props) => {
   const settings = {
@@ -25,7 +25,7 @@ const ScienceHome = (props) => {
   };
 
   return (
-    <section className="business">
+    <section className="science-home">
       <Heading title="Science" />
       <div className="content">
         <Slider {...settings}>

@@ -1,10 +1,14 @@
-.business .box {
+.business-home .box {
   margin: 15px 15px 15px 0;
 }
-.business img {
-  width: 100%;
-  height: 100%;
+.business-home img {
+  width: 625px;
+  height: 416px;
 }
-.business .text {
+.business-home .text {
   padding: 20px;
+}
+
+.business-home a {
+  color: black;
 }

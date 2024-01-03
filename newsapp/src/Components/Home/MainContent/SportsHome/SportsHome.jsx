@@ -18,7 +18,7 @@ const SportsHome = (props) => {
     slidesPerRow: 1,
   };
   return (
-    <section className="sport">
+    <section className="sport-home">
       <Heading title="Sport" />
       <div className="content">
         <Slider {...settings}>

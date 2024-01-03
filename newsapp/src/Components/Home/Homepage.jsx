@@ -12,8 +12,7 @@ const Homepage = () => {
       setNews(data);
     };
     fetchData();
-  }, [category]);
-  console.log(news);
+  }, []);
 
   const scienceNews = news.filter((item) => item.category === "science");
   const sportsNews = news.filter((item) => item.category === "sports");

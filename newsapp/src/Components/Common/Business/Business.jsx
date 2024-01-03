@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Search from "../Search/Search";
-import { BusinessChildren } from "./BusinessChildren";
+import { News } from "../News/News";
 
 const Business = () => {
   const category = "business";
@@ -13,14 +13,12 @@ const Business = () => {
     fetchData();
   }, [category]);
 
-  console.log(news);
-
   return (
     <>
-      <section className="business">
+      <section className="content">
         <div className="container paddingTB">
           {news.map((item) => {
-            return <BusinessChildren key={item.id} info={item} />;
+            return <News key={item.id} info={item} />;
           })}
         </div>
       </section>

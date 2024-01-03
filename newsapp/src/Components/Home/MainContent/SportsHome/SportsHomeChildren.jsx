@@ -25,24 +25,29 @@ export const SportsHomeChildren = ({
           </div>
         </div>
         <div className="text">
-          <h1 className="title">{title.slice(0, 40)}...</h1>
+          <h1 className="title">
+            <a href={url} target="_blank" rel="noreferrer">
+              {title.slice(0, 60)}...
+            </a>
+          </h1>
+
+          {description !== null ? (
+            <p className="desc">{description.slice(0, 250)}...</p>
+          ) : (
+            <p className="desc"></p>
+          )}
           <div className="date">
             <i>
               <CalendarMonthIcon />
             </i>
             <label>{publishedAt}</label>
           </div>
-          {description !== null ? (
-            <p className="desc">{description.slice(0, 250)}...</p>
-          ) : (
-            <p className="desc"></p>
-          )}
-          <div className="comment">
+          {/* <div className="comment">
             <i></i>
             <label>Share / </label>
             <i></i>
             <label> 0</label>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

@@ -33,7 +33,7 @@ const GeneralHome = (props) => {
   };
   return (
     <>
-      <section className="general">
+      <section className="general-home">
         <Heading title="General" />
         <div className="content">
           <Slider {...settings}>

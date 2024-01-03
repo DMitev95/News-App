@@ -18,14 +18,18 @@ const ScienceHomeChildren = ({
       <div className="box shadow">
         <div className="images">
           <div className="img">
-            <img src={urlToImage}></img>
+            <img src={urlToImage} alt=""></img>
           </div>
           <div className="category category1">
             <span>{category}</span>
           </div>
         </div>
         <div className="text">
-          <h1 className="title">{title.slice(0, 40)}...</h1>
+          <h1 className="title">
+            <a href={url} target="_blank" rel="noreferrer">
+              {title.slice(0, 60)}...
+            </a>
+          </h1>
           <div className="date">
             <i>
               <CalendarMonthIcon />

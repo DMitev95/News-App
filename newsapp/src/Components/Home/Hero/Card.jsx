@@ -12,7 +12,9 @@ const Card = ({
         <div className="text">
           {/* <span className="category"></span> */}
           <h1 className="titleBg">
-            <a href={url}>{title}</a>
+            <a href={url} target="_blank" rel="noreferrer">
+              {title}
+            </a>
           </h1>
           <div className="author flex">
             <span>by {author}</span>

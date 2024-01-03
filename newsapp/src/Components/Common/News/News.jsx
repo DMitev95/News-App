@@ -2,7 +2,7 @@ import React from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import CommentIcon from "@mui/icons-material/Comment";
 
-export const BusinessChildren = ({
+export const News = ({
   info: {
     id,
     author,
@@ -15,10 +15,10 @@ export const BusinessChildren = ({
   },
 }) => {
   return (
-    <>
+    <div className="news">
       <div className="images">
         <div className="img" style={{ height: "500px" }}>
-          <img src={urlToImage}></img>
+          <img src={urlToImage} alt="News Image" />
         </div>
         <div className="category category1">
           <span>{category}</span>
@@ -44,6 +44,6 @@ export const BusinessChildren = ({
           <label> 0</label>
         </div>
       </div>
-    </>
+    </div>
   );
 };

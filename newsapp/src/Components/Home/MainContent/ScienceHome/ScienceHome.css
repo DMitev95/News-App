@@ -1,0 +1,16 @@
+.science-home img {
+  width: 100%;
+  height: 200px;
+}
+
+.science-home .box {
+  margin: 15px 15px 15px 0;
+}
+
+.science-home .text {
+  padding: 20px;
+}
+
+.science-home a {
+  color: black;
+}

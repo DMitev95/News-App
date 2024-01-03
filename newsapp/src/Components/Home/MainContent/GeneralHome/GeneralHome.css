@@ -1,4 +1,4 @@
-.general .box {
+.general-home .box {
   background-color: #fff;
   display: flex;
   /* #18  copy*/
@@ -7,26 +7,30 @@
   margin: 15px 15px 15px 0;
   /*box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;*/
 }
-.general .images {
+.general-home .images {
   position: relative;
   height: 150px;
 }
-.general img {
-  width: 100%;
+.general-home img {
+  width: 225px;
   height: 150px;
   object-fit: cover;
 }
-.general .text h1 {
+.general-home .text h1 {
   padding: 20px 0 0 20px;
   margin: 0;
 }
-.general .date {
+.general-home .date {
   margin-top: 15px;
   padding: 0 0 0 20px;
 }
 
-.general .comment {
+.general-home .comment {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding: 5px 0 0 20px;
   margin-top: 5px;
+}
+
+.general-home a {
+  color: black;
 }

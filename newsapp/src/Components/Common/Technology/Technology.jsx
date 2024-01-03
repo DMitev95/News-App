@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Search from "../Search/Search";
+import { News } from "../News/News";
 
 const Technology = () => {
+  const category = "technology";
+  const [news, setNews] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await Search(category);
+      setNews(data);
+    };
+    fetchData();
+  }, [category]);
+
   return (
     <>
-      <section className="culture">
+      <section className="content">
         <div className="container paddingTB">
-          <h1>Technology Sections</h1>
+          {news.map((item) => {
+            return <News key={item.id} info={item} />;
+          })}
         </div>
       </section>
     </>

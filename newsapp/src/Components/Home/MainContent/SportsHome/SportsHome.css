@@ -1,22 +1,30 @@
-.sport .box {
+.sport-home .box {
   margin-bottom: 30px;
   margin-left: 2px;
 }
-.sport .text {
+.sport-home .text {
   padding: 0 30px;
 }
-.sport .images {
+.sport-home .images {
   width: 320px;
   height: 220px;
 }
-.sport img {
+.sport-home img {
   width: 320px;
   height: 220px;
   object-fit: cover;
 }
-.sport h1 {
+.sport-home h1 {
   font-size: 22px;
 }
+.sport-home a {
+  color: black;
+}
+
+.items .box {
+  justify-content: left;
+}
+
 @media screen and (max-width: 768px) {
   .sport img,
   .sport .images {
