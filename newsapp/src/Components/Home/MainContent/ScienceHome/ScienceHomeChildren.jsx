@@ -1,24 +1,20 @@
 import React from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import NoImage from "../../../Images/NoImage.png";
 
 const ScienceHomeChildren = ({
-  info: {
-    id,
-    author,
-    category,
-    title,
-    description,
-    url,
-    urlToImage,
-    publishedAt,
-  },
+  info: { author, category, title, url, urlToImage, publishedAt },
 }) => {
   return (
     <div className="items">
       <div className="box shadow">
         <div className="images">
           <div className="img">
-            <img src={urlToImage} alt=""></img>
+            {urlToImage !== null ? (
+              <img src={urlToImage} alt=""></img>
+            ) : (
+              <img src={NoImage} alt=""></img>
+            )}
           </div>
           <div className="category category1">
             <span>{category}</span>

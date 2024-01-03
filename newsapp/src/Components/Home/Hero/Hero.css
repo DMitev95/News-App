@@ -66,7 +66,7 @@
 .hero .box:nth-child(1) h1 {
   font-size: 28px;
 }
-/* .hero .box:nth-child(2) .category {
+.hero .box:nth-child(2) .category {
   background-color: crimson;
 }
 .hero .box:nth-child(3) .category {
@@ -74,7 +74,7 @@
 }
 .hero .box:nth-child(4) .category {
   background-color: #c78823;
-} */
+}
 @media screen and (max-width: 768px) {
   .hero .container {
     display: grid;

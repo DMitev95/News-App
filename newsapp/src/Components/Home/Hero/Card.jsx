@@ -1,16 +1,21 @@
 import React from "react";
+import NoImage from "../../Images/NoImage.png";
 
 const Card = ({
-  item: { id, author, title, description, url, urlToImage, publishedAt },
+  item: { author, title, url, urlToImage, publishedAt, category },
 }) => {
   return (
     <>
       <div className="box">
         <div className="img">
-          <img src={urlToImage} alt=""></img>
+          {urlToImage !== null ? (
+            <img src={urlToImage} alt=""></img>
+          ) : (
+            <img src={NoImage} alt=""></img>
+          )}
         </div>
         <div className="text">
-          {/* <span className="category"></span> */}
+          <span className="category">{category}</span>
           <h1 className="titleBg">
             <a href={url} target="_blank" rel="noreferrer">
               {title}

@@ -1,5 +1,6 @@
 import React from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import NoImage from "../../../Images/NoImage.png";
 
 export const SportsHomeChildren = ({
   info: {
@@ -18,7 +19,11 @@ export const SportsHomeChildren = ({
       <div className="box shadow flexSB">
         <div className="images">
           <div className="img">
-            <img src={urlToImage} alt="" />
+            {urlToImage !== null ? (
+              <img src={urlToImage} alt=""></img>
+            ) : (
+              <img src={NoImage} alt=""></img>
+            )}
           </div>
           <div className="category category1">
             <span>{category}</span>

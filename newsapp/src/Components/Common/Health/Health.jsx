@@ -16,7 +16,7 @@ const Health = () => {
   return (
     <>
       <section className="content">
-        <div className="container paddingTB">
+        <div className="container paddingTB categoryContent">
           {news.map((item) => {
             return <News key={item.id} info={item} />;
           })}

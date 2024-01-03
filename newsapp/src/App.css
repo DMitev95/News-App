@@ -23,6 +23,14 @@ a {
   text-decoration: none;
 }
 /*-----------global-----------*/
+.categoryContent {
+  display: grid;
+  grid-template-columns: repeat(2, 0.1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
 .container {
   max-width: 90%;
   margin: auto;

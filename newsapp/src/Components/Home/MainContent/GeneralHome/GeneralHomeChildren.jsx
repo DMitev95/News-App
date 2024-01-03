@@ -2,6 +2,7 @@ import React from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import CommentIcon from "@mui/icons-material/Comment";
 import "./GeneralHome.css";
+import NoImage from "../../../Images/NoImage.png";
 
 const GeneralHomeChildren = ({
   info: {
@@ -21,7 +22,11 @@ const GeneralHomeChildren = ({
         <div className="box shadow">
           <div className="images">
             <div className="img">
-              <img src={urlToImage} alt=""></img>
+              {urlToImage !== null ? (
+                <img src={urlToImage} alt=""></img>
+              ) : (
+                <img src={NoImage} alt=""></img>
+              )}
             </div>
             <div className="category category1">
               <span>{category}</span>
