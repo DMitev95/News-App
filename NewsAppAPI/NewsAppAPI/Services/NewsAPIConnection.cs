@@ -31,7 +31,7 @@ namespace NewsAppAPI.Services
                 var newsApiClient = new NewsApiClient(newsUrlKey);
                 var articlesResponse = await newsApiClient.GetTopHeadlinesAsync(new TopHeadlinesRequest
                 {
-                    Country = Countries.US,
+                    Language = Languages.EN,
                     Category = (Categories)Enum.Parse(typeof(Categories), category, true),
                     PageSize = pageSize
                 });
@@ -89,7 +89,7 @@ namespace NewsAppAPI.Services
                     var newsApiClient = new NewsApiClient(newsUrlKey);
                     var articlesResponse = await newsApiClient.GetTopHeadlinesAsync(new TopHeadlinesRequest
                     {
-                        Country = Countries.US,
+                        Language = Languages.EN,
                         Category = (Categories)Enum.Parse(typeof(Categories), name, true),
                         PageSize = pageSize
                     });
