@@ -25,7 +25,7 @@ namespace NewsAppAPI
 
             var app = builder.Build();
 
-            app.UseCors("AllowSpecificOrigin");
+            
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
@@ -35,6 +35,8 @@ namespace NewsAppAPI
             }
 
             app.UseHttpsRedirection();
+
+            app.UseCors("AllowSpecificOrigin");
 
             app.UseAuthorization();
 

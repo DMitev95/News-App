@@ -44,11 +44,11 @@ export const News = ({
             </i>
             <label> {publishedAt}</label>
           </div>
-          <div className="comment">
+          <div className="author">
             <i>
               <CommentIcon />
             </i>
-            <label> 0</label>
+            <label> by {author}</label>
           </div>
         </div>
       </div>

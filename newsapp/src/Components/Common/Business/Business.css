@@ -1,0 +1,24 @@
+.slick-dots {
+  display: flex !important; /* Make sure dots are displayed as flex items */
+  justify-content: center; /* Center the dots horizontally */
+}
+
+.custom-dot {
+  margin: 0 6px; /* Adjust the spacing between dots */
+  width: 30px; /* Set the width of each dot */
+  height: 30px; /* Set the height of each dot */
+  border-radius: 50%; /* Make dots circular */
+  background-color: lightgray; /* Set the default background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-dot.active {
+  background-color: #fb4c35; /* Set the background color for the active dot */
+  color: white; /* Set the text color for the active dot */
+}
+
+.slick-dots li {
+  margin: 0 7px;
+}

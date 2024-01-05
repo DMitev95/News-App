@@ -23,13 +23,13 @@ a {
   text-decoration: none;
 }
 /*-----------global-----------*/
-.categoryContent {
+/* .categoryContent {
   display: grid;
   grid-template-columns: repeat(2, 0.1fr);
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-}
+} */
 
 .container {
   max-width: 90%;
@@ -99,14 +99,14 @@ a {
   font-size: 17px;
   margin-bottom: 15px;
 }
-.comment i,
+.author i,
 .date i {
   width: 30px;
   color: #fb4c35;
   font-size: 13px;
 }
 
-.comment label,
+.author label,
 .date label {
   font-size: 13px;
   color: #868585;
@@ -118,3 +118,5 @@ a {
 .shadow {
   box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 10px -10px;
 }
+
+/*--------Slic donts----------*/
