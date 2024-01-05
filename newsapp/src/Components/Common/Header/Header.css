@@ -8,18 +8,23 @@ header {
   background-color: #000;
   color: #fff;
 }
-header li {
+header .navbar {
+  display: flex;
   margin-right: 30px;
   transition: 0.5s;
+  gap: 20px;
 }
-header li a {
+.navbar a {
   color: #fff;
   transition: 0.5s;
 }
-header li a:hover {
-  color: crimson;
+
+.navbar a:hover,
+.navbar a.active {
+  color: #fb4c35;
   cursor: pointer;
 }
+
 header a {
   color: #fff;
 }

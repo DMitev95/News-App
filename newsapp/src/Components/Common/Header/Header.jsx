@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 import Head from "./Head";
 import DehazeIcon from "@mui/icons-material/Dehaze";
@@ -12,36 +12,18 @@ const Header = () => {
       <Head />
       <header>
         <div className="container paddingSmall">
-          <nav>
-            <ul
-              className={navbar ? "navbar" : "flex"}
-              onClick={() => setNavbar(false)}
-            >
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/General">General</Link>
-              </li>
-              <li>
-                <Link to="/Business">Business</Link>
-              </li>
-              <li>
-                <Link to="/Entertainment">Entertainment</Link>
-              </li>
-              <li>
-                <Link to="/Health">Health</Link>
-              </li>
-              <li>
-                <Link to="/Science">Science</Link>
-              </li>
-              <li>
-                <Link to="/Sports">Sports</Link>
-              </li>
-              <li>
-                <Link to="/Technology">Technology</Link>
-              </li>
-            </ul>
+          <nav
+            className={navbar ? "navbar-active" : "navbar"}
+            onClick={() => setNavbar(false)}
+          >
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/General">General</NavLink>
+            <NavLink to="/Business">Business</NavLink>
+            <NavLink to="/Entertainment">Entertainment</NavLink>
+            <NavLink to="/Health">Health</NavLink>
+            <NavLink to="/Science">Science</NavLink>
+            <NavLink to="/Sports">Sports</NavLink>
+            <NavLink to="/Technology">Technology</NavLink>
             <button className="barIcon" onClick={() => setNavbar(!navbar)}>
               {navbar ? <CloseIcon></CloseIcon> : <DehazeIcon></DehazeIcon>}
             </button>
