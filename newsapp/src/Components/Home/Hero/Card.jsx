@@ -1,5 +1,5 @@
 import React from "react";
-import NoImage from "../../Images/NoImage.png";
+import NoImage from "../../Common/images/NoImage.png";
 
 const Card = ({
   item: { author, title, url, urlToImage, publishedAt, category },

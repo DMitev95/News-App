@@ -2,7 +2,7 @@ import React from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import CommentIcon from "@mui/icons-material/Comment";
 import "./GeneralHome.css";
-import NoImage from "../../../Images/NoImage.png";
+import NoImage from "../../../Common/images/NoImage.png";
 
 const GeneralHomeChildren = ({
   info: {

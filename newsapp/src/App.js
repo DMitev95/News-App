@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Header from "./Components/Common/Header/Header";
 import Business from "./Components/Common/Business/Business";
@@ -9,6 +8,7 @@ import Science from "./Components/Common/Science/Science";
 import Sports from "./Components/Common/Sports/Sports";
 import Technology from "./Components/Common/Technology/Technology";
 import Homepage from "./Components/Home/Homepage";
+import Footer from "./Components/Home/Footer/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
           <Route path="/Sports" element={<Sports />} />
           <Route path="/technology" element={<Technology />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </>
   );

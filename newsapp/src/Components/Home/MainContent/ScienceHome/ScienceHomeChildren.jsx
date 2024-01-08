@@ -1,6 +1,6 @@
 import React from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import NoImage from "../../../Images/NoImage.png";
+import NoImage from "../../../Common/images/NoImage.png";
 
 const ScienceHomeChildren = ({
   info: { author, category, title, url, urlToImage, publishedAt },

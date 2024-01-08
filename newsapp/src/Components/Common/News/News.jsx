@@ -1,7 +1,7 @@
 import React from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import CommentIcon from "@mui/icons-material/Comment";
-import NoImage from "../../Images/NoImage.png";
+import NoImage from "../../Common/images/NoImage.png";
 import "./News.css";
 
 export const News = ({

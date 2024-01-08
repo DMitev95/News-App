@@ -1,0 +1,47 @@
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 0;
+}
+
+footer .container {
+  display: grid;
+  grid-gap: 30px;
+}
+
+footer .title {
+  display: flex;
+}
+
+footer .title h3 {
+  padding: 10px 0px;
+  margin-left: 10px;
+  color: #fb4c35;
+}
+
+footer img {
+  height: 50px;
+  width: 50px;
+}
+
+footer p {
+  margin: 20px 0;
+}
+
+.contacts .emailContact,
+.contacts .phoneContact {
+  display: flex;
+}
+
+.emailContact span,
+.emailContact i,
+.phoneContact span,
+.phoneContact i {
+  padding: 10px 0;
+}
+
+.emailContact span,
+.phoneContact span {
+  margin-left: 10px;
+  color: #fb4c35;
+}
