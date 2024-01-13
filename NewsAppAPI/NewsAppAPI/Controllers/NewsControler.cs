@@ -87,5 +87,61 @@ namespace NewsAppAPI.Controllers
                 return dto;
             }
         }
+
+        [HttpGet("word", Name = "GetNewsByWord")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<APIRespond>> GetNewsByWord(string word)
+        {
+            newsReques = await services.RequestByWordAsync(word);
+            try
+            {
+                List<News> news = new List<News>();
+
+
+                if (newsReques.StatusCode == HttpStatusCode.OK)
+                {
+                    newsRespond.StatusCode = HttpStatusCode.OK;
+                    newsRespond.Result = news;
+
+                    var index = 1;
+
+                    foreach (var article in (IEnumerable<NewsDTO>)newsReques.Result)
+                    {
+                        news.Add(new News
+                        {
+                            Id = index,
+                            Category = article.Category,
+                            Author = article.Author,
+                            Title = article.Title,
+                            Description = article.Description,
+                            Url = article.Url,
+                            UrlToImage = article.UrlToImage,
+                            Content = article.Content,
+                            PublishedAt = article.PublishedAt,
+                        });
+                        index++;
+                    }
+                }
+                else
+                {
+                    newsRespond.StatusCode = HttpStatusCode.BadRequest;
+                    newsRespond.ErrorMessages = newsReques.ErrorMessages;
+                    newsRespond.IsSuccess = false;
+                }
+
+                return newsRespond;
+            }
+            catch (Exception ex)
+            {
+                APIRespond dto = new APIRespond
+                {
+                    ErrorMessages = new List<string> { ex.Message },
+                    IsSuccess = false,
+                    StatusCode = HttpStatusCode.BadRequest
+                };
+                return dto;
+            }
+        }
     }
 }

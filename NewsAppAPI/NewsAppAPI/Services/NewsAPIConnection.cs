@@ -135,5 +135,54 @@ namespace NewsAppAPI.Services
 
             return responseModel;
         }
+
+        public async Task<APIRequest> RequestByWordAsync(string word, int pageSize = 40)
+        {
+            try
+            {
+                var newsApiClient = new NewsApiClient(newsUrlKey);
+                var articlesResponse = newsApiClient.GetEverything(new EverythingRequest
+                {
+                    Language = Languages.EN,
+                    Q = word,
+                    SortBy = SortBys.Popularity,
+                    PageSize = pageSize
+                });
+
+                if (articlesResponse.Status == Statuses.Ok)
+                {
+
+                    responseModel.StatusCode = HttpStatusCode.OK;
+                    foreach (var news in articlesResponse.Articles)
+                    {
+                        responseModel.Result.Add(new NewsDTO
+                        {
+                            Author = news.Author,
+                            Title = news.Title,
+                            Description = news.Description,
+                            Url = news.Url,
+                            UrlToImage = news.UrlToImage,
+                            Content = news.Content,
+                            PublishedAt = news.PublishedAt.ToString()
+                        });
+                    }
+                    return responseModel;
+                }
+
+                APIRequest dto = new APIRequest
+                {
+                    ErrorMessages = new List<string> { articlesResponse.Error.ToString() }
+                };
+                return dto;
+            }
+            catch (Exception ex)
+            {
+                APIRequest dto = new APIRequest
+                {
+                    ErrorMessages = new List<string> { ex.Message }
+                };
+                return dto;
+            }
+        }
     }
 }
