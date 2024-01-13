@@ -33,17 +33,15 @@ const Technology = () => {
   };
 
   return (
-    <>
-      <section className="content">
-        <div className="container paddingTB categoryContent">
-          <Slider {...settings}>
-            {news.map((item) => {
-              return <News key={item.id} info={item} />;
-            })}
-          </Slider>
-        </div>
-      </section>
-    </>
+    <section className="content">
+      <div className="container paddingTB categoryContent">
+        <Slider {...settings}>
+          {news.map((item) => {
+            return <News key={item.id} info={item} />;
+          })}
+        </Slider>
+      </div>
+    </section>
   );
 };
 

@@ -26,7 +26,7 @@ function App() {
           <Route path="/Science" element={<Science />} />
           <Route path="/Sports" element={<Sports />} />
           <Route path="/Technology" element={<Technology />} />
-          <Route path="/Search" component={<SearchResult />} />
+          <Route path="/Search" element={<SearchResult />} />
         </Routes>
         <Footer />
       </Router>
