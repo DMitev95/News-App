@@ -4,6 +4,7 @@ import "./Header.css";
 import Head from "./Head";
 import DehazeIcon from "@mui/icons-material/Dehaze";
 import CloseIcon from "@mui/icons-material/Close";
+import SearchForm from "../SearchByWord/SearchForm";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -24,6 +25,7 @@ const Header = () => {
             <NavLink to="/Science">Science</NavLink>
             <NavLink to="/Sports">Sports</NavLink>
             <NavLink to="/Technology">Technology</NavLink>
+            <SearchForm />
             <button className="barIcon" onClick={() => setNavbar(!navbar)}>
               {navbar ? <CloseIcon></CloseIcon> : <DehazeIcon></DehazeIcon>}
             </button>

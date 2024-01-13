@@ -9,6 +9,7 @@ import Sports from "./Components/Common/Sports/Sports";
 import Technology from "./Components/Common/Technology/Technology";
 import Homepage from "./Components/Home/Homepage";
 import Footer from "./Components/Home/Footer/Footer";
+import SearchResult from "./Components/Common/SearchByWord/SearchResult";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
           <Route path="/Health" element={<Health />} />
           <Route path="/Science" element={<Science />} />
           <Route path="/Sports" element={<Sports />} />
-          <Route path="/technology" element={<Technology />} />
+          <Route path="/Technology" element={<Technology />} />
+          <Route path="/Search" component={<SearchResult />} />
         </Routes>
         <Footer />
       </Router>
