@@ -1,5 +1,5 @@
 // SearchForm.js
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom"; // Assuming the components are in the same directory
 
 const SearchForm = () => {
@@ -7,14 +7,21 @@ const SearchForm = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   const handleSearch = () => {
-    navigate(`/Search?query=${searchTerm}`);
-  };
-
-  const handleKeyPress = (e) => {
-    if (e.key === "Enter") {
-      handleSearch();
+    if (searchTerm !== "") {
+      navigate(`/Search?query=${searchTerm}`);
     }
   };
+
+  useEffect(() => {
+    if (searchTerm !== "") {
+      const delayDebounceFn = setTimeout(() => {
+        navigate(`/Search?query=${searchTerm}`);
+        console.log(searchTerm);
+      }, 500);
+
+      return () => clearTimeout(delayDebounceFn);
+    }
+  }, [navigate, searchTerm]);
 
   return (
     <div>
@@ -22,7 +29,6 @@ const SearchForm = () => {
         type="text"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        onKeyDown={handleKeyPress}
       />
       <button onClick={handleSearch}>Search</button>
     </div>
