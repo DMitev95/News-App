@@ -18,7 +18,7 @@ const GeneralHome = (props) => {
     rows: 4,
     slidesPerRow: 1,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 7000,
     pauseOnHover: true,
     responsive: [

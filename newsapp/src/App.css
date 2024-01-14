@@ -31,6 +31,10 @@ a {
   gap: 2.5rem;
 } */
 
+.icon {
+  color: #fb4c35;
+}
+
 .container {
   max-width: 90%;
   margin: auto;

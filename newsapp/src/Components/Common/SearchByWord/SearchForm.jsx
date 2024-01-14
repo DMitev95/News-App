@@ -1,16 +1,11 @@
 // SearchForm.js
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom"; // Assuming the components are in the same directory
+import { useNavigate, useLocation } from "react-router-dom"; // Assuming the components are in the same directory
 
 const SearchForm = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [searchTerm, setSearchTerm] = useState("");
-
-  const handleSearch = () => {
-    if (searchTerm !== "") {
-      navigate(`/Search?query=${searchTerm}`);
-    }
-  };
 
   useEffect(() => {
     if (searchTerm !== "") {
@@ -23,15 +18,19 @@ const SearchForm = () => {
     }
   }, [navigate, searchTerm]);
 
+  useEffect(() => {
+    if (location.pathname !== "/Search") setSearchTerm("");
+  }, [location.pathname]);
+
   return (
-    <div>
+    <form>
       <input
         type="text"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <button onClick={handleSearch}>Search</button>
-    </div>
+      <button>Search</button>
+    </form>
   );
 };
 

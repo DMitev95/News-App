@@ -2,10 +2,11 @@
   background-color: #fff;
   display: flex;
   /* #18  copy*/
-  /*box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;*/
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   position: relative;
   margin: 15px 15px 15px 0;
-  /*box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;*/
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 .general-home .images {
   position: relative;
@@ -25,11 +26,15 @@
   padding: 0 0 0 20px;
 }
 
-.general-home .comment {
+.general-home .author {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 5px 0 0 20px;
-  margin-top: 5px;
+  /* padding: 5px 0 0 20px;
+  margin-top: 5px; */
 }
+
+/* .general-home .author .icon {
+  scale: 90%;
+} */
 
 .general-home a {
   color: black;

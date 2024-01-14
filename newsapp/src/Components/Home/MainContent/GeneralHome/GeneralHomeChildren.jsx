@@ -44,9 +44,9 @@ const GeneralHomeChildren = ({
                 <label> {publishedAt}</label>
               </i>
             </div>
-            <div className="comment">
+            <div className="author">
+              <CommentIcon className="icon" />
               <i>
-                <CommentIcon />
                 <label> {author}</label>
               </i>
             </div>
