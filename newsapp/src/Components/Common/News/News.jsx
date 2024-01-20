@@ -27,9 +27,13 @@ export const News = ({
               <img src={NoImage} alt=""></img>
             )}
           </div>
-          <div className="category category1">
-            <span>{category}</span>
-          </div>
+          {category === null || category === "" ? (
+            ""
+          ) : (
+            <div className="category category1">
+              <span>{category}</span>
+            </div>
+          )}
         </div>
         <div className="text">
           <h1 className="title">{title.slice(0, 200)}</h1>

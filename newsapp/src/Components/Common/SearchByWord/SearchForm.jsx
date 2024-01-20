@@ -1,6 +1,6 @@
-// SearchForm.js
 import React, { useState, useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom"; // Assuming the components are in the same directory
+import { useNavigate, useLocation } from "react-router-dom";
+import "./SearchForm.css";
 
 const SearchForm = () => {
   const navigate = useNavigate();
@@ -11,25 +11,26 @@ const SearchForm = () => {
     if (searchTerm !== "") {
       const delayDebounceFn = setTimeout(() => {
         navigate(`/Search?query=${searchTerm}`);
-        console.log(searchTerm);
       }, 500);
-
       return () => clearTimeout(delayDebounceFn);
     }
   }, [navigate, searchTerm]);
 
   useEffect(() => {
-    if (location.pathname !== "/Search") setSearchTerm("");
+    if (location.pathname !== "/Search") {
+      setSearchTerm("");
+    }
   }, [location.pathname]);
 
   return (
     <form>
       <input
+        className="search"
         type="text"
-        value={searchTerm}
+        value={`${searchTerm}`}
+        placeholder="Search for specific news"
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <button>Search</button>
     </form>
   );
 };

@@ -1,3 +1,6 @@
+.news {
+}
+
 .news .text .title {
   height: 52px;
   overflow: hidden;
@@ -5,9 +8,11 @@
 .news .news-content {
   width: 34rem;
   height: 35rem;
+  border: 1px solid black;
   margin: 15px 15px 15px 0;
   overflow: hidden;
   border-radius: 1%;
+  box-shadow: 5px 10px 5px gray;
 }
 .news .images .img img {
   width: 100%;

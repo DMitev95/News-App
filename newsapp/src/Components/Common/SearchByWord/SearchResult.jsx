@@ -27,7 +27,7 @@ const SearchResultsPage = () => {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    rows: 2,
+    rows: 4,
     customPaging: (i) => (
       <div className={`custom-dot ${currentSlide === i ? "active" : ""}`}>
         {i + 1}

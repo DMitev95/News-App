@@ -25,11 +25,13 @@ const Header = () => {
             <NavLink to="/Science">Science</NavLink>
             <NavLink to="/Sports">Sports</NavLink>
             <NavLink to="/Technology">Technology</NavLink>
-            <SearchForm />
             <button className="barIcon" onClick={() => setNavbar(!navbar)}>
               {navbar ? <CloseIcon></CloseIcon> : <DehazeIcon></DehazeIcon>}
             </button>
           </nav>
+          <div className="search-form">
+            <SearchForm />
+          </div>
         </div>
       </header>
     </>
