@@ -8,9 +8,22 @@
 }
 
 .science-home .text {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
+}
+
+.science-home .text .title {
+  height: 52px;
 }
 
 .science-home a {
   color: black;
+}
+
+.science-home .content .items .author,
+.science-home .content .items .date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

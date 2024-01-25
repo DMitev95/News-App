@@ -1,10 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
 import Heading from "../../../Common/Heading/Heading";
-import { SportsHomeChildren } from "./SportsHomeChildren";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./SportsHome.css";
+import NewsForHomePage from "../NewsForHomepage/NewsForHomePage";
 
 const SportsHome = (props) => {
   const settings = {
@@ -23,7 +23,7 @@ const SportsHome = (props) => {
       <div className="content">
         <Slider {...settings}>
           {props.sportsNews.map((item) => {
-            return <SportsHomeChildren key={item.id} info={item} />;
+            return <NewsForHomePage key={item.id} info={item} />;
           })}
         </Slider>
       </div>

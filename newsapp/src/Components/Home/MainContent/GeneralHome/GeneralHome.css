@@ -1,7 +1,6 @@
 .general-home .box {
   background-color: #fff;
   display: flex;
-  /* #18  copy*/
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   position: relative;
@@ -17,25 +16,30 @@
   height: 150px;
   object-fit: cover;
 }
-.general-home .text h1 {
-  padding: 20px 0 0 20px;
+.general-home .text .title {
+  display: flex;
+  height: 72px;
+  padding: 20px 20px;
   margin: 0;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .general-home .date {
   margin-top: 15px;
-  padding: 0 0 0 20px;
 }
 
 .general-home .author {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  /* padding: 5px 0 0 20px;
-  margin-top: 5px; */
 }
-
-/* .general-home .author .icon {
-  scale: 90%;
-} */
 
 .general-home a {
   color: black;
+}
+
+.general-home .content .items .author,
+.general-home .content .items .date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 0 0 20px;
 }

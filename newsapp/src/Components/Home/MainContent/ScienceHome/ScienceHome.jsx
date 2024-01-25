@@ -1,10 +1,10 @@
 import React from "react";
 import Heading from "../../../Common/Heading/Heading";
-import ScienceHomeChildren from "./ScienceHomeChildren";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./ScienceHome.css";
+import NewsForHomePage from "../NewsForHomepage/NewsForHomePage";
 
 const ScienceHome = (props) => {
   const settings = {
@@ -30,7 +30,7 @@ const ScienceHome = (props) => {
       <div className="content">
         <Slider {...settings}>
           {props.scienceNews.map((item) => {
-            return <ScienceHomeChildren key={item.id} info={item} />;
+            return <NewsForHomePage key={item.id} info={item} />;
           })}
         </Slider>
       </div>

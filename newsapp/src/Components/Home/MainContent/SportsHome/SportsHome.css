@@ -1,4 +1,4 @@
-.sport-home .box {
+.sport-home .content .items .box {
   margin-bottom: 30px;
   margin-left: 2px;
 }
@@ -23,6 +23,14 @@
 
 .items .box {
   justify-content: left;
+}
+
+.sport-home .content .items .author,
+.sport-home .content .items .date,
+.sport-home .content .items .box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {

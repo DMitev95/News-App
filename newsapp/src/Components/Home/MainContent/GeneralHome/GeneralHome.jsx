@@ -4,8 +4,7 @@ import Slider from "react-slick";
 import "./GeneralHome.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-import GeneralHomeChildren from "./GeneralHomeChildren";
+import NewsForHomePage from "../NewsForHomepage/NewsForHomePage";
 
 const GeneralHome = (props) => {
   const settings = {
@@ -38,7 +37,7 @@ const GeneralHome = (props) => {
         <div className="content">
           <Slider {...settings}>
             {props.generalNews.map((item) => {
-              return <GeneralHomeChildren key={item.id} info={item} />;
+              return <NewsForHomePage key={item.id} info={item} />;
             })}
           </Slider>
         </div>

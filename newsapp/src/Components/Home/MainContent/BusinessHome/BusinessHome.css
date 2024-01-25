@@ -1,14 +1,25 @@
 .business-home .box {
+  display: flex;
   margin: 15px 15px 15px 0;
+  flex-direction: column;
 }
 .business-home img {
   width: 625px;
   height: 416px;
 }
 .business-home .text {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
 }
 
 .business-home a {
   color: black;
+}
+
+.business-home .content .items .author,
+.business-home .content .items .date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

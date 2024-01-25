@@ -1,10 +1,10 @@
 import React from "react";
 import Heading from "../../../Common/Heading/Heading";
-import BusinessHomeChildren from "./BusinessHomeChildren";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./BusinessHome.css";
+import NewsForHomePage from "../NewsForHomepage/NewsForHomePage";
 
 const BusinessHome = (props) => {
   const settings = {
@@ -22,7 +22,7 @@ const BusinessHome = (props) => {
         <div className="content">
           <Slider {...settings}>
             {props.businessNews.map((item) => {
-              return <BusinessHomeChildren key={item.id} info={item} />;
+              return <NewsForHomePage key={item.id} info={item} />;
             })}
           </Slider>
         </div>

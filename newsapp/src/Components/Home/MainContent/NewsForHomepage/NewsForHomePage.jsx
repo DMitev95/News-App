@@ -1,8 +1,9 @@
 import React from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import PersonIcon from "@mui/icons-material/Person";
 import NoImage from "../../../Common/images/NoImage.png";
 
-const BusinessHomeChildren = ({
+const NewsForHomePage = ({
   info: {
     id,
     author,
@@ -42,6 +43,15 @@ const BusinessHomeChildren = ({
               </i>
               <label> {publishedAt}</label>
             </div>
+            <div className="author">
+              <i>
+                <PersonIcon />
+              </i>
+              <label>
+                {" "}
+                by {author === "" || author === null ? "Unknown" : author}
+              </label>
+            </div>
           </div>
         </div>
       </div>
@@ -49,4 +59,4 @@ const BusinessHomeChildren = ({
   );
 };
 
-export default BusinessHomeChildren;
+export default NewsForHomePage;

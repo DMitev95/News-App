@@ -1,8 +1,7 @@
 import React from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
-import CommentIcon from "@mui/icons-material/Comment";
+import PersonIcon from "@mui/icons-material/Person";
 import NoImage from "../../Common/images/NoImage.png";
-import "./News.css";
 
 export const News = ({
   info: {
@@ -43,16 +42,19 @@ export const News = ({
               : description.slice(0, 200)}
           </p>
           <div className="date">
-            <i>
+            <i className="icon">
               <CalendarMonthIcon />
             </i>
             <label> {publishedAt}</label>
           </div>
           <div className="author">
-            <i>
-              <CommentIcon />
+            <i className="icon">
+              <PersonIcon />
             </i>
-            <label> by {author}</label>
+            <label>
+              {" "}
+              by {author === "" || author === null ? "Unknown" : author}
+            </label>
           </div>
         </div>
       </div>

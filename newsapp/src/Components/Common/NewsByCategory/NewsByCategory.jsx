@@ -2,10 +2,8 @@ import React, { useEffect, useState } from "react";
 import Search from "../Search/Search";
 import NewsList from "../News/NewsList";
 
-const Entertainment = () => {
-  const category = "entertainment";
+const NewsByCategory = ({ category }) => {
   const [news, setNews] = useState([]);
-
   useEffect(() => {
     const fetchData = async () => {
       const data = await Search(category);
@@ -23,4 +21,4 @@ const Entertainment = () => {
   );
 };
 
-export default Entertainment;
+export default NewsByCategory;
