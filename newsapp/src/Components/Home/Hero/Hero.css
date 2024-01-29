@@ -48,11 +48,12 @@
   grid-row-start: 5;
   grid-row-end: 9;
 }
-.hero .text h1 {
+.hero .text .title {
   font-weight: 500;
   margin: 10px 0;
   font-size: 15px;
 }
+
 .hero .author span {
   font-size: 14px;
   margin-right: 20px;
@@ -75,6 +76,76 @@
 .hero .box:nth-child(4) .category {
   background-color: #c78823;
 }
+
+/*-------------Mobile-----------*/
+@media screen and (max-width: 1440px) {
+  .hero .container {
+    grid-template-rows: repeat(6, 6vh);
+  }
+
+  .hero .box:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 7;
+  }
+  .hero .box:nth-child(2) {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+  .hero .box:nth-child(3) {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 7;
+  }
+  .hero .box:nth-child(4) {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 7;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .hero .container {
+    grid-template-rows: repeat(8, 6vh);
+  }
+
+  .hero .box:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 9;
+  }
+  .hero .box:nth-child(2) {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+  .hero .box:nth-child(3) {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 9;
+  }
+  .hero .box:nth-child(4) {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 9;
+  }
+}
+
+@media screen and (max-width: 828px) {
+  .hero {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .hero .container {
     display: grid;
@@ -89,21 +160,21 @@
     grid-row-end: 5;
   }
   .hero .box:nth-child(2) {
-    grid-column-start: 1;
+    grid-column-start: 5;
     grid-column-end: 9;
-    grid-row-start: 5;
-    grid-row-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 3;
   }
   .hero .box:nth-child(3) {
-    grid-column-start: 1;
-    grid-column-end: 9;
-    grid-row-start: 10;
-    grid-row-end: 15;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 5;
   }
   .hero .box:nth-child(4) {
-    grid-column-start: 1;
+    grid-column-start: 7;
     grid-column-end: 9;
-    grid-row-start: 15;
-    grid-row-end: 20;
+    grid-row-start: 3;
+    grid-row-end: 5;
   }
 }

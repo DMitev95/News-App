@@ -8,11 +8,28 @@ import NewsForHomePage from "../NewsForHomepage/NewsForHomePage";
 
 const BusinessHome = (props) => {
   const settings = {
-    dots: false,
+    className: "center",
+    centerMode: false,
     infinite: true,
-    speed: 500,
+    centerPadding: "",
     slidesToShow: 2,
-    slidesToScroll: 1,
+    speed: 500,
+    rows: 1,
+    slidesPerRow: 1,
+    dots: false,
+    autoplay: false,
+    autoplaySpeed: 7000,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+    ],
   };
 
   return (

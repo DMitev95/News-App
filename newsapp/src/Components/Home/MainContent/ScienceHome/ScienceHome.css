@@ -27,3 +27,35 @@
   flex-direction: row;
   align-items: center;
 }
+
+/*-------------Mobile-----------*/
+@media screen and (max-width: 1440px) {
+  .science-home .text {
+    padding: 10px;
+  }
+
+  .science-home .text .title {
+    font-size: 15px;
+    height: 52px;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .science-home .text {
+    padding: 10px;
+  }
+
+  .science-home .text .title {
+    font-size: 14px;
+    height: 52px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .science-home .text .title {
+    font-size: 14px;
+  }
+  .science-home .text {
+    padding: 10px;
+  }
+}

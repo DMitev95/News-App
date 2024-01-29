@@ -16,7 +16,7 @@ const Card = ({
         </div>
         <div className="text">
           <span className="category">{category}</span>
-          <h1 className="titleBg">
+          <h1 className="title">
             <a href={url} target="_blank" rel="noreferrer">
               {title}
             </a>

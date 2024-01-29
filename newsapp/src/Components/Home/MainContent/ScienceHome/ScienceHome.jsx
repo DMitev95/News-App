@@ -15,10 +15,11 @@ const ScienceHome = (props) => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 800,
+        breakpoint: 910,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          dots: true,
         },
       },
     ],

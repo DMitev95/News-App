@@ -6,7 +6,8 @@
   border-radius: 0.7rem;
   width: 30rem;
   transition: all 0.3s;
-  color: fb4c35;
+  color: #fb4c35;
+  margin: 10px 10px;
 
   /* background-color: var(--color-background-900); */
   /* background-color: var(--color-primary-light); */
@@ -18,6 +19,19 @@
 
 .search:focus {
   outline: none;
-  box-shadow: 10px 5px 5px #fb4c35;
+  box-shadow: 5px 3px 3px #fb4c35;
   transform: translateY(-2px);
+}
+
+/*-------------Mobile-----------*/
+@media screen and (max-width: 1440px) {
+  .search {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 1242px) {
+  .search {
+    width: 15rem;
+  }
 }
