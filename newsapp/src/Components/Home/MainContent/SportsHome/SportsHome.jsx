@@ -16,6 +16,23 @@ const SportsHome = (props) => {
     speed: 500,
     rows: 2,
     slidesPerRow: 1,
+    responsive: [
+      {
+        breakpoint: 829,
+        settings: {
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows: 2,
+          dots: true,
+        },
+      },
+    ],
   };
   return (
     <section className="sport-home">

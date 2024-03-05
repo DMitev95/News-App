@@ -42,17 +42,20 @@ namespace NewsAppAPI.Services
                     responseModel.StatusCode = HttpStatusCode.OK;
                     foreach (var news in articlesResponse.Articles)
                     {
-                        responseModel.Result.Add(new NewsDTO
+                        if (news.Title != "[Removed]")
                         {
-                            Category = category,
-                            Author = news.Author,
-                            Title = news.Title,
-                            Description = news.Description,
-                            Url = news.Url,
-                            UrlToImage = news.UrlToImage,
-                            Content = news.Content,
-                            PublishedAt = news.PublishedAt.ToString()
-                        });
+                            responseModel.Result.Add(new NewsDTO
+                            {
+                                Category = category,
+                                Author = news.Author,
+                                Title = news.Title,
+                                Description = news.Description,
+                                Url = news.Url,
+                                UrlToImage = news.UrlToImage,
+                                Content = news.Content,
+                                PublishedAt = news.PublishedAt.ToString()
+                            });
+                        }
                     }
                     return responseModel;
                 }
@@ -100,17 +103,20 @@ namespace NewsAppAPI.Services
                         responseModel.StatusCode = HttpStatusCode.OK;
                         foreach (var news in articlesResponse.Articles)
                         {
-                            responseModel.Result.Add(new NewsDTO
+                            if (news.Title != "[Removed]")
                             {
-                                Author = news.Author,
-                                Category = name,
-                                Title = news.Title,
-                                Description = news.Description,
-                                Url = news.Url,
-                                UrlToImage = news.UrlToImage,
-                                Content = news.Content,
-                                PublishedAt = news.PublishedAt.ToString()
-                            });
+                                responseModel.Result.Add(new NewsDTO
+                                {
+                                    Author = news.Author,
+                                    Category = name,
+                                    Title = news.Title,
+                                    Description = news.Description,
+                                    Url = news.Url,
+                                    UrlToImage = news.UrlToImage,
+                                    Content = news.Content,
+                                    PublishedAt = news.PublishedAt.ToString()
+                                });
+                            }
                         }
                     }
                     else
@@ -155,16 +161,19 @@ namespace NewsAppAPI.Services
                     responseModel.StatusCode = HttpStatusCode.OK;
                     foreach (var news in articlesResponse.Articles)
                     {
-                        responseModel.Result.Add(new NewsDTO
+                        if (news.Title != "[Removed]")
                         {
-                            Author = news.Author,
-                            Title = news.Title,
-                            Description = news.Description,
-                            Url = news.Url,
-                            UrlToImage = news.UrlToImage,
-                            Content = news.Content,
-                            PublishedAt = news.PublishedAt.ToString()
-                        });
+                            responseModel.Result.Add(new NewsDTO
+                            {
+                                Author = news.Author,
+                                Title = news.Title,
+                                Description = news.Description,
+                                Url = news.Url,
+                                UrlToImage = news.UrlToImage,
+                                Content = news.Content,
+                                PublishedAt = news.PublishedAt.ToString()
+                            });
+                        }
                     }
                     return responseModel;
                 }

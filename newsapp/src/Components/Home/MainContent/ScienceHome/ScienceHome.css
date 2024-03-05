@@ -53,9 +53,16 @@
 
 @media screen and (max-width: 1080px) {
   .science-home .text .title {
-    font-size: 14px;
+    font-size: 13px;
   }
   .science-home .text {
     padding: 10px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .science-home img {
+    width: 100%;
+    height: 150px;
   }
 }

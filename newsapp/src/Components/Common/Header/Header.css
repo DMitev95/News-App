@@ -14,6 +14,7 @@
 }
 
 .home-header .navbar {
+  display: flex;
   margin-right: 30px;
   transition: 0.5s;
   gap: 40px;
@@ -58,6 +59,9 @@
 }
 
 @media screen and (max-width: 1070px) {
+  .head .flexSB {
+    justify-content: center;
+  }
   .home-header {
     display: flex;
     flex-direction: column-reverse;

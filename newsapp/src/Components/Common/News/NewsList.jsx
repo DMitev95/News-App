@@ -14,6 +14,25 @@ export default function NewsList({ news }) {
     slidesToShow: 3,
     slidesToScroll: 1,
     rows: 4,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 956,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows: 4,
+          dots: true,
+        },
+      },
+    ],
     customPaging: (i) => (
       <div className={`custom-dot ${currentSlide === i ? "active" : ""}`}>
         {i + 1}

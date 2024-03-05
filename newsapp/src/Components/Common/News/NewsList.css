@@ -1,7 +1,6 @@
 .news .news-content {
   display: flex;
   flex-direction: column;
-  width: 34rem;
   height: 35rem;
   border: 1px solid black;
   margin: 15px 15px 15px 0;
@@ -68,4 +67,43 @@
 
 .slick-dots li {
   margin: 0 7px;
+}
+
+/*-------------Mobile-----------*/
+@media screen and (max-width: 1440px) {
+  /* .general-home .content .items .author label,
+  .general-home .content .items .date label {
+    font-size: 12px;
+  } */
+}
+
+@media screen and (max-width: 828px) {
+  .business-home img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .business-home .text .title {
+    font-size: 16px;
+    height: 46px;
+  }
+
+  .business-home .text {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .business-home img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .sport-home .text {
+    padding: 0;
+  }
+
+  .business-home .text .title {
+    font-size: 13px;
+  }
 }

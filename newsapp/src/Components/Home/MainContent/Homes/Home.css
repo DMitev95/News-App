@@ -11,7 +11,7 @@ main .container {
 .sideContent .heading h6 {
   background-color: #000;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 828px) {
   main .container {
     flex-direction: column;
   }

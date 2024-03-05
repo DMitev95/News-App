@@ -26,6 +26,13 @@ const GeneralHome = (props) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 829,
+        settings: {
+          dots: true,
         },
       },
     ],

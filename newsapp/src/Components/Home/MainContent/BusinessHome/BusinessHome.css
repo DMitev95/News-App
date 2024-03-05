@@ -79,3 +79,18 @@
     padding: 0;
   }
 }
+
+@media screen and (max-width: 512px) {
+  .business-home img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .sport-home .text {
+    padding: 0;
+  }
+
+  .business-home .text .title {
+    font-size: 13px;
+  }
+}
