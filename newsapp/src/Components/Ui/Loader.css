@@ -1,0 +1,31 @@
+.loader {
+  border: 4px solid rgba(255, 165, 0, 0.2); /* Light orange border */
+  border-top: 4px solid orange; /* Orange border on top to create spinning effect */
+  border-radius: 50%; /* Makes the spinner round */
+  width: 100px; /* Size of the spinner */
+  height: 100px; /* Size of the spinner */
+  animation: spin 1s linear infinite; /* Animation for spinning */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  } /* Starting position */
+  100% {
+    transform: rotate(360deg);
+  } /* Ending position, making a full circle */
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  backdrop-filter: blur(5px); /* Apply blur effect to the background */
+  z-index: 9999; /* Ensure the loading overlay is on top of other content */
+}

@@ -1,10 +1,5 @@
 import "./App.css";
 import Header from "./Components/Common/Header/Header";
-import General from "./Components/Common/General/General";
-import Health from "./Components/Common/Health/Health";
-import Science from "./Components/Common/Science/Science";
-import Sports from "./Components/Common/Sports/Sports";
-import Technology from "./Components/Common/Technology/Technology";
 import SearchResult from "./Components/Common/SearchByWord/SearchResult";
 import Homepage from "./Components/Home/Homepage";
 import Footer from "./Components/Home/Footer/Footer";
@@ -26,7 +21,7 @@ function App() {
             path="/Entertainment"
             element={<NewsByCategory category={"Entertainment"} />}
           />
-          <Route path="/General" element={<General />} />
+          {/* <Route path="/General" element={<General />} /> */}
           <Route
             path="/Health"
             element={<NewsByCategory category={"Health"} />}

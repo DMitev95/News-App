@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import SearchByWord from "../Search/SearchByWord";
+import SearchByWord from "../Services/SearchByWord";
 import { News } from "../News/News";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";

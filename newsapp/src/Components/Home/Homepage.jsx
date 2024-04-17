@@ -1,15 +1,19 @@
 import React, { useEffect, useState } from "react";
-import Search from "../Common/Search/Search";
+import Search from "../Common/Services/Search";
 import Hero from "./Hero/Hero";
 import Home from "./MainContent/Homes/Home";
+import Loader from "../Ui/Loader";
 
 const Homepage = () => {
   const category = "home";
   const [news, setNews] = useState([]);
+  const [isLoading, setIsloading] = useState(true);
   useEffect(() => {
     const fetchData = async () => {
+      setIsloading(true);
       const data = await Search(category);
       setNews(data);
+      setIsloading(false);
     };
     fetchData();
   }, []);
@@ -36,7 +40,9 @@ const Homepage = () => {
     herowNews.push(businessNews[0]);
   }
 
-  return (
+  return isLoading ? (
+    <Loader />
+  ) : (
     <>
       <Hero news={herowNews} />
       <Home
