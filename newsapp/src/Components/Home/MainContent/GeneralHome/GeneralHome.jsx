@@ -38,18 +38,16 @@ const GeneralHome = (props) => {
     ],
   };
   return (
-    <>
-      <section className="general-home">
-        <Heading title="General" />
-        <div className="content">
-          <Slider {...settings}>
-            {props.generalNews.map((item) => {
-              return <NewsForHomePage key={item.id} info={item} />;
-            })}
-          </Slider>
-        </div>
-      </section>
-    </>
+    <section className="general-home">
+      <Heading title="General" />
+      <div className="content">
+        <Slider {...settings}>
+          {props.generalNews.map((item) => {
+            return <NewsForHomePage key={item.id} info={item} />;
+          })}
+        </Slider>
+      </div>
+    </section>
   );
 };
 

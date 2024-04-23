@@ -1,22 +1,11 @@
-import React, { useEffect, useState } from "react";
-import Search from "../Common/Services/Search";
+import React from "react";
+import { getNews } from "../Common/Services/apiNews";
 import Hero from "./Hero/Hero";
 import Home from "./MainContent/Homes/Home";
-import Loader from "../Ui/Loader";
+import { useLoaderData } from "react-router-dom";
 
 const Homepage = () => {
-  const category = "home";
-  const [news, setNews] = useState([]);
-  const [isLoading, setIsloading] = useState(true);
-  useEffect(() => {
-    const fetchData = async () => {
-      setIsloading(true);
-      const data = await Search(category);
-      setNews(data);
-      setIsloading(false);
-    };
-    fetchData();
-  }, []);
+  const news = useLoaderData();
 
   const scienceNews = news.filter((item) => item.category === "science");
   const sportsNews = news.filter((item) => item.category === "sports");
@@ -40,9 +29,7 @@ const Homepage = () => {
     herowNews.push(businessNews[0]);
   }
 
-  return isLoading ? (
-    <Loader />
-  ) : (
+  return (
     <>
       <Hero news={herowNews} />
       <Home
@@ -54,5 +41,10 @@ const Homepage = () => {
     </>
   );
 };
+
+export async function loader() {
+  const news = await getNews("home");
+  return news;
+}
 
 export default Homepage;

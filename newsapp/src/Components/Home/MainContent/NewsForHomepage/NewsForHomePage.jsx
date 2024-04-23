@@ -16,46 +16,44 @@ const NewsForHomePage = ({
   },
 }) => {
   return (
-    <>
-      <div className="items">
-        <div className="box shadow">
-          <div className="images">
-            <div className="img">
-              {urlToImage !== null ? (
-                <img src={urlToImage} alt=""></img>
-              ) : (
-                <img src={NoImage} alt=""></img>
-              )}
-            </div>
-            <div className="category category1">
-              <span>{category}</span>
-            </div>
+    <div className="items">
+      <div className="box shadow">
+        <div className="images">
+          <div className="img">
+            {urlToImage !== null ? (
+              <img src={urlToImage} alt=""></img>
+            ) : (
+              <img src={NoImage} alt=""></img>
+            )}
           </div>
-          <div className="text">
-            <h1 className="title">
-              <a href={url} target="_blank" rel="noreferrer">
-                {title.slice(0, 60)}...
-              </a>
-            </h1>
-            <div className="date">
-              <i>
-                <CalendarMonthIcon />
-              </i>
-              <label> {publishedAt}</label>
-            </div>
-            <div className="author">
-              <i>
-                <PersonIcon />
-              </i>
-              <label>
-                {" "}
-                by {author === "" || author === null ? "Unknown" : author}
-              </label>
-            </div>
+          <div className="category category1">
+            <span>{category}</span>
+          </div>
+        </div>
+        <div className="text">
+          <h1 className="title">
+            <a href={url} target="_blank" rel="noreferrer">
+              {title.slice(0, 60)}...
+            </a>
+          </h1>
+          <div className="date">
+            <i>
+              <CalendarMonthIcon />
+            </i>
+            <label> {publishedAt}</label>
+          </div>
+          <div className="author">
+            <i>
+              <PersonIcon />
+            </i>
+            <label>
+              {" "}
+              by {author === "" || author === null ? "Unknown" : author}
+            </label>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -5,6 +5,8 @@
 
 .science-home .box {
   margin: 15px 15px 15px 0;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .science-home .text {

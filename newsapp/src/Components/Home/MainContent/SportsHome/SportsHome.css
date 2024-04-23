@@ -1,3 +1,8 @@
+.items .box {
+  justify-content: left;
+  border-radius: 10px;
+  overflow: hidden;
+}
 .sport-home .content .items .box {
   margin-bottom: 30px;
   margin-left: 2px;
@@ -19,10 +24,6 @@
 }
 .sport-home a {
   color: black;
-}
-
-.items .box {
-  justify-content: left;
 }
 
 .sport-home .content .items .author,

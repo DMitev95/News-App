@@ -1,0 +1,65 @@
+/* --------------ReactSlic Style --------------- */
+
+.slick-dots {
+  display: flex !important; /* Make sure dots are displayed as flex items */
+  justify-content: center; /* Center the dots horizontally */
+}
+
+.custom-dot {
+  margin: 0 6px; /* Adjust the spacing between dots */
+  width: 30px; /* Set the width of each dot */
+  height: 30px; /* Set the height of each dot */
+  border-radius: 50%; /* Make dots circular */
+  background-color: lightgray; /* Set the default background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-active .custom-dot {
+  background-color: #fb4c35;
+  color: white;
+}
+
+.slick-dots li {
+  margin: 0 7px;
+}
+
+/*-------------Mobile-----------*/
+@media screen and (max-width: 1440px) {
+  /* .general-home .content .items .author label,
+    .general-home .content .items .date label {
+      font-size: 12px;
+    } */
+}
+
+@media screen and (max-width: 828px) {
+  .business-home img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .business-home .text .title {
+    font-size: 16px;
+    height: 46px;
+  }
+
+  .business-home .text {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .business-home img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .sport-home .text {
+    padding: 0;
+  }
+
+  .business-home .text .title {
+    font-size: 13px;
+  }
+}

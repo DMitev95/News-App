@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
           <p>
             This is a demo of a news website. It's built with React.js and
-            ASP.NET Core API. To fetch the latest news, I use
+            ASP.NET Core API. To fetch the latest news, I'm using
             https://newsapi.org/.
           </p>
           <div className="contacts">

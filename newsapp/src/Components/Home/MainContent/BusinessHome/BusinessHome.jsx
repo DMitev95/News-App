@@ -42,18 +42,16 @@ const BusinessHome = (props) => {
   };
 
   return (
-    <>
-      <section className="business-home">
-        <Heading title="Business" />
-        <div className="content">
-          <Slider {...settings}>
-            {props.businessNews.map((item) => {
-              return <NewsForHomePage key={item.id} info={item} />;
-            })}
-          </Slider>
-        </div>
-      </section>
-    </>
+    <section className="business-home">
+      <Heading title="Business" />
+      <div className="content">
+        <Slider {...settings}>
+          {props.businessNews.map((item) => {
+            return <NewsForHomePage key={item.id} info={item} />;
+          })}
+        </Slider>
+      </div>
+    </section>
   );
 };
 
