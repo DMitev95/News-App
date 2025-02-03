@@ -1,5 +1,9 @@
 /* --------------ReactSlic Style --------------- */
 
+.news {
+  overflow: hidden;
+}
+
 .slick-dots {
   display: flex !important; /* Make sure dots are displayed as flex items */
   justify-content: center; /* Center the dots horizontally */

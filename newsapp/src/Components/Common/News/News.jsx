@@ -17,7 +17,16 @@ export const News = ({
   },
 }) => {
   return (
-    <div className="news">
+    <div
+      className="news"
+      onClick={() => {
+        if (url) {
+          window.open(url, "_blank");
+        } else {
+          console.warn("No URL provided");
+        }
+      }}
+    >
       <div className="news-content">
         <div className="images">
           <div className="img">

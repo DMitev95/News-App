@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from "react";
-import { getNews } from "../Services/apiNews";
+import React from "react";
 import Slider from "react-slick";
+import { getNews } from "../Services/apiNews";
 import { News } from "../News/News";
-import Loader from "../../Ui/Loader/Loader";
+import { useLoaderData } from "react-router-dom";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./NewsByCategory.css";
 
-const NewsByCategory = ({ category }) => {
-  const [news, setNews] = useState([]);
-  const [isLoading, setIsloading] = useState(false);
+const NewsByCategory = () => {
+  const news = useLoaderData();
 
   const settings = {
     dots: true,
@@ -40,19 +39,7 @@ const NewsByCategory = ({ category }) => {
     customPaging: (i) => <div className="custom-dot">{i + 1}</div>,
   };
 
-  useEffect(() => {
-    const fetchData = async () => {
-      setIsloading(true);
-      const data = await getNews(category);
-      setNews(data);
-      setIsloading(false);
-    };
-    fetchData();
-  }, [category]);
-
-  return isLoading ? (
-    <Loader />
-  ) : (
+  return (
     <div className="container paddingTB categoryContent">
       <Slider {...settings}>
         {news.map((item) => {
@@ -62,5 +49,10 @@ const NewsByCategory = ({ category }) => {
     </div>
   );
 };
+
+export async function loader(category) {
+  const news = await getNews(category);
+  return news;
+}
 
 export default NewsByCategory;
