@@ -1,4 +1,4 @@
-import { apiURL } from "../API/API";
+//import { apiURL } from "../API/API";
 
 // export async function getNews(category) {
 //   const response = await fetch(
