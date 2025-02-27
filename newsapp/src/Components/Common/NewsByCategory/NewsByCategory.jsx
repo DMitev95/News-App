@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useRef, React } from "react";
 import Slider from "react-slick";
 import { getNews } from "../Services/apiNews";
 import { News } from "../News/News";
@@ -7,8 +7,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./NewsByCategory.css";
 
-const NewsByCategory = () => {
+const NewsByCategory = ({ category }) => {
   const news = useLoaderData();
+  let sliderRef = useRef(null); // Create a ref for the slider
 
   const settings = {
     dots: true,
@@ -39,12 +40,22 @@ const NewsByCategory = () => {
     customPaging: (i) => <div className="custom-dot">{i + 1}</div>,
   };
 
+  // Reset slider to first slide when category changes
+  useEffect(() => {
+    sliderRef.slickGoTo(0);
+  }, [category]); // Runs whenever the category changes
+
   return (
     <div className="container paddingTB categoryContent">
-      <Slider {...settings}>
-        {news.map((item) => {
-          return <News key={item.id} info={item} />;
-        })}
+      <Slider
+        ref={(slider) => {
+          sliderRef = slider;
+        }}
+        {...settings}
+      >
+        {news.map((item) => (
+          <News key={item.id} info={item} />
+        ))}
       </Slider>
     </div>
   );

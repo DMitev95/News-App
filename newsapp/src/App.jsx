@@ -8,6 +8,7 @@ import NewsByCategory from "./Components/Common/NewsByCategory/NewsByCategory";
 import Error from "./Components/Ui/Error/Error";
 import AppLayout from "./Components/Ui/AppLayout/AppLayout";
 
+console.log(import.meta.env.VITE_API_KEY);
 const router = createBrowserRouter([
   {
     element: <AppLayout />,
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
       {
         path: "/Business",
         element: <NewsByCategory />,
-        loader: () => newsLoader("Busines"),
+        loader: () => newsLoader("Business"),
         errorElement: <Error />,
       },
       {

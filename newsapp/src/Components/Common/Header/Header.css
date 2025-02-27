@@ -2,7 +2,7 @@
   cursor: pointer;
 }
 .head .logo img {
-  width: 100px;
+  width: 70px;
 }
 
 .home-header {
@@ -42,6 +42,10 @@
   color: #fff;
   display: none;
   border: none;
+}
+
+.paddingTB {
+  padding: 10px 0;
 }
 
 @media screen and (max-width: 1440px) {

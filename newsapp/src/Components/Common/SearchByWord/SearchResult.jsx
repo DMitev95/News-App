@@ -26,14 +26,28 @@ const SearchResultsPage = () => {
     dotsClass: "slick-dots",
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     rows: 4,
-    customPaging: (i) => (
-      <div className={`custom-dot ${currentSlide === i ? "active" : ""}`}>
-        {i + 1}
-      </div>
-    ),
-    beforeChange: (oldIndex, newIndex) => setCurrentSlide(newIndex),
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 956,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          rows: 4,
+          dots: true,
+        },
+      },
+    ],
+    customPaging: (i) => <div className="custom-dot">{i + 1}</div>,
   };
 
   return (

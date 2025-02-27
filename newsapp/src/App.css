@@ -17,7 +17,7 @@ h6,
 span,
 label,
 i {
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 a {
   text-decoration: none;

@@ -41,3 +41,24 @@
 .business-home a {
   color: black;
 }
+
+.news .news-content .text .news-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.read-more a {
+  padding: 6px 12px;
+  background-color: #e53935;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.read-more a:hover {
+  background-color: #c62828;
+}

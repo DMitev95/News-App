@@ -17,16 +17,7 @@ export const News = ({
   },
 }) => {
   return (
-    <div
-      className="news"
-      onClick={() => {
-        if (url) {
-          window.open(url, "_blank");
-        } else {
-          console.warn("No URL provided");
-        }
-      }}
-    >
+    <div className="news">
       <div className="news-content">
         <div className="images">
           <div className="img">
@@ -51,20 +42,29 @@ export const News = ({
               ? "Dosent have description!"
               : description.slice(0, 200)}
           </p>
-          <div className="date">
-            <i className="icon">
-              <CalendarMonthIcon />
-            </i>
-            <label> {publishedAt}</label>
-          </div>
-          <div className="author">
-            <i className="icon">
-              <PersonIcon />
-            </i>
-            <label>
-              {" "}
-              by {author === "" || author === null ? "Unknown" : author}
-            </label>
+          <div className="news-footer">
+            <div className="info">
+              <div className="date">
+                <i className="icon">
+                  <CalendarMonthIcon />
+                </i>
+                <label> {publishedAt}</label>
+              </div>
+              <div className="author">
+                <i className="icon">
+                  <PersonIcon />
+                </i>
+                <label>
+                  {" "}
+                  by {author === "" || author === null ? "Unknown" : author}
+                </label>
+              </div>
+            </div>
+            <div className="read-more">
+              <a href={url} target="_blank" rel="noopener noreferrer">
+                Read More
+              </a>
+            </div>
           </div>
         </div>
       </div>
